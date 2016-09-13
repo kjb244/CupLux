@@ -1,0 +1,78 @@
+.parent{
+	margin: 0;
+}
+
+.row{
+	max-width: 80rem;
+}
+
+.menu{
+	padding-left: 0;
+}
+
+.menu ul{
+	margin-left: 0;
+}
+
+.menu ul li{
+	list-style-type: none;
+	background-color: white;
+	margin: 10px 0;
+}
+
+.menu li .container{
+	width: 50%;
+	margin: auto;
+}
+
+.menu p{
+	text-align: center;
+	margin: 0;
+	line-height: 1rem;
+}
+
+.menu li:not(:nth-last-child(-n+2)):not(:first-child){
+	border-bottom: 2px solid red;
+}
+
+.menu li:not(:last-child) .container{
+	margin-bottom: 10px;
+}
+
+.menu img{
+	margin-left: auto;
+	margin-right: auto;
+	display: inherit;
+}
+
+.main{
+	background-color: #d2ceda;
+}
+
+.main .top {
+	margin: 20px;
+}
+
+.main .top img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.main .bottom{
+	margin-top: 30px;
+	background-color: #b5b4b4;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.main .bottom h3{
+	text-align: center;
+}
+
+.main .bottom .paras{
+	margin-top: 36px;
+}
+
+
+
