@@ -35,6 +35,7 @@ exports.jsonHelper = function(inp){
 
 	//put back into js object
 	inp = JSON.parse(inp);
+	//return object
 	return inp;
 
 
