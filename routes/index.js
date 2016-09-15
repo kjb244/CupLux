@@ -13,7 +13,7 @@ router.get('/main', function(req, res){
 	let template = { title: titles['main'] || ''};
 	main = utils.jsonHelper(main);
 	let obj = _.extend(template, main);
-	res.render('test', obj);
+	res.render('main', obj);
 
 });
 
