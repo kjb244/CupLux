@@ -1,78 +1,46 @@
-.parent{
-	margin: 0;
-}
+.mainModule .parent {
+  margin: 0; }
+.mainModule .row {
+  max-width: 80rem; }
+.mainModule .menu {
+  padding-left: 0; }
+  .mainModule .menu ul {
+    margin-left: 0; }
+  .mainModule .menu li {
+    list-style-type: none;
+    background-color: white;
+    margin: 10px 0; }
+    .mainModule .menu li .container {
+      width: 50%;
+      margin: auto; }
+  .mainModule .menu li:not(:nth-last-child(-n+2)):not(:first-child) {
+    border-bottom: 2px solid red; }
+  .mainModule .menu li:not(:last-child) .container {
+    margin-bottom: 10px; }
+  .mainModule .menu p {
+    text-align: center;
+    margin: 0;
+    line-height: 1rem; }
+  .mainModule .menu img {
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit; }
+.mainModule .main {
+  background-color: #d2ceda; }
+  .mainModule .main .top {
+    margin: 20px; }
+    .mainModule .main .top img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block; }
+  .mainModule .main .bottom {
+    margin-top: 30px;
+    background-color: #b5b4b4;
+    padding: 20px;
+    margin-bottom: 20px; }
+    .mainModule .main .bottom h3 {
+      text-align: center; }
+    .mainModule .main .bottom .paras {
+      margin-top: 36px; }
 
-.row{
-	max-width: 80rem;
-}
-
-.menu{
-	padding-left: 0;
-}
-
-.menu ul{
-	margin-left: 0;
-}
-
-.menu ul li{
-	list-style-type: none;
-	background-color: white;
-	margin: 10px 0;
-}
-
-.menu li .container{
-	width: 50%;
-	margin: auto;
-}
-
-.menu p{
-	text-align: center;
-	margin: 0;
-	line-height: 1rem;
-}
-
-.menu li:not(:nth-last-child(-n+2)):not(:first-child){
-	border-bottom: 2px solid red;
-}
-
-.menu li:not(:last-child) .container{
-	margin-bottom: 10px;
-}
-
-.menu img{
-	margin-left: auto;
-	margin-right: auto;
-	display: inherit;
-}
-
-.main{
-	background-color: #d2ceda;
-}
-
-.main .top {
-	margin: 20px;
-}
-
-.main .top img{
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
-
-.main .bottom{
-	margin-top: 30px;
-	background-color: #b5b4b4;
-	padding: 20px;
-	margin-bottom: 20px;
-}
-
-.main .bottom h3{
-	text-align: center;
-}
-
-.main .bottom .paras{
-	margin-top: 36px;
-}
-
-
-
+/*# sourceMappingURL=main.css.map */
