@@ -14,9 +14,11 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "client-sessions": "^0.7.0",
+    "cookie-parser": "^1.4.3",
     "debug": "^2.2.0",
     "express": "^4.14.0",
     "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
     "grunt-concurrent": "^2.3.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
