@@ -20,10 +20,10 @@ module.exports = function(grunt) {
 		watch: {
 			css: {
 				files: '**/*.scss',
-				tasks: ['sass']
-			},
-			scripts: {
-				files: '**/*.js'
+				tasks: ['sass'],
+				options: {
+      				debounceDelay: 1000,
+    			}
 			}
 		},
 		concurrent: {
