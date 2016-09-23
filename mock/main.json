@@ -1,7 +1,7 @@
 {
   "content": {
     "headerClass": "mainModule",
-    "menu": [
+    "nodes": [
       {
         "img": "",
         "text": "",
@@ -9,49 +9,99 @@
       },
       {
         "img": "/images/roasting_coffee.jpg",
-        "text": "{LINK||menu_link}"
+        "link": "{LINK||menu_link}"
       },
       {
         "img": "/images/location_hours.jpg",
-        "text": "LOCATION AND HOURS"
+        "link": "{LINK||location_hours_link}",
+        "content": {
+          "class": "show location-hours",
+          "heading": "LOCATION HOURS",
+          "details": [
+            {
+              "subHeading": "Test",
+              "text": [
+                "1",
+                "2",
+                "3"
+              ]
+            }
+          ]
+        }
       },
       {
         "img": "/images/bloc_card.jpg",
-        "text": "BLOC CARD"
+        "link": "{LINK||bloc_card_link}",
+        "content": {
+          "class": "hide bloc-card",
+          "heading": "BLOC CARD",
+          "details": [
+            {
+              "text": [
+                "We love trees, almost as much as we love coffee. Planting a tree can be a very special experience, one that can transcend time and serve as reminder of those who have come and gone",
+                "In addition to the contributions we receive from the purchase of a Block Card, we'll be bolstering local efforts to improve Charlotte's Tree Canopy. By working with our close partners at Trees Charlotte we'll do our part to help plant new trees, take care of existing and help educate the public on what needs to be done to preserve this beautiful canopy.",
+                "Along the way we'll track progress and share it with you. Although we're just a small business starting out, our impact will grow as we do"
+              ]
+            }
+          ]
+        }
       },
       {
         "img": "/images/canopy.jpg",
-        "text": "CANOPY LOVE"
+        "link": "{LINK||canopy_love_link}",
+        "content": {
+          "class": "hide canopy-love",
+          "heading": "CANOPY LOVE",
+          "details": [
+            {
+              "subHeading": "Test",
+              "text": [
+                "1",
+                "2",
+                "3"
+              ]
+            }
+          ]
+        }
       },
       {
         "img": "",
-        "text": "ABOUT"
-      },
-      {
-        "img": "",
-        "text": "",
-        "class": "bottom"
+        "link": "{LINK||about_link}"
       }
-    ],
-    "main": {
-      "header": {
-        "img": "/images/canopy.jpg"
-      },
-      "body": {
-        "heading": "CANOPY LOVE",
-        "paras": [
-          "We love trees, almost as much as we love coffee. Planting a tree can be a very special experience, one that can transcend time and serve as reminder of those who have come and gone",
-          "In addition to the contributions we receive from the purchase of a Block Card, we'll be bolstering local efforts to improve Charlotte's Tree Canopy. By working with our close partners at Trees Charlotte we'll do our part to help plant new trees, take care of existing and help educate the public on what needs to be done to preserve this beautiful canopy.",
-          "Along the way we'll track progress and share it with you. Although we're just a small business starting out, our impact will grow as we do"
-        ]
-      }
-    }
+    ]
   },
   "LINKS": {
     "menu_link": {
       "id": "menu-link",
-      "class": "menu-link",
+      "class": "links",
       "content": "MENU",
+      "href": "#"
+    },
+    "location_hours_link": {
+      "id": "location-hurs-link",
+      "class": "links",
+      "content": "LOCATION AND HOURS",
+      "href": "#",
+      "data-destination": "location-hours"
+    },
+    "bloc_card_link": {
+      "id": "bloc-card-link",
+      "class": "links",
+      "content": "BLOC CARD",
+      "href": "#",
+      "data-destination": "bloc-card"
+    },
+    "canopy_love_link": {
+      "id": "canopy-love-link",
+      "class": "links",
+      "content": "CANOPY LOVE",
+      "href": "#",
+      "data-destination": "canopy-love"
+    },
+    "about_link": {
+      "id": "about-link",
+      "class": "links",
+      "content": "ABOUT",
       "href": "#"
     }
   }

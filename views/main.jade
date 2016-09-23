@@ -2,25 +2,30 @@ extends layout
 
 block content
   div(class="#{content.headerClass}")
-    section.parent
-      .row(data-equalizer)
+    section.parent.show-for-medium-up
+      .row.collapse(data-equalizer)
         .small-3.columns.menu(data-equalizer-watch)
           ul
-            each rec in content.menu
+            each rec in content.nodes
               li
                 div.container
                   img(src= rec.img)
-                  p!= rec.text
+                  p!= rec.link
         .small-9.columns.main(data-equalizer-watch)
-            .row
-              .small-12.columns.small-centered
-                .row
-                  .top
-                    img(src=content.main.header.img)
-                .row
-                  .bottom.small-11.columns.small-centered
-                    h3 #{content.main.body.heading}
-                    .paras
-                      each rec in content.main.body.paras
-                        p= rec
+          each rec in content.nodes
+            if rec.content
+              .row(class=rec.content.class)
+                .small-12.columns.small-centered
+                  .row
+                    .top
+                      img(src=rec.img)
+                  .row
+                    .bottom.small-11.columns.small-centered
+                      h3.heading!= rec.content.heading
+                      each rec2 in rec.content.details
+                        if rec2.subHeading
+                          h4.subheading!= rec2.subHeading
+                        .paras
+                          each rec3 in rec2.text
+                            p!= rec3
   script(src='/javascripts/main.js')
