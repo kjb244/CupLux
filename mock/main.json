@@ -3,16 +3,16 @@
     "headerClass": "mainModule",
     "nodes": [
       {
-        "img": "",
+        "img": "/images/cup_lux_main.png",
         "text": "",
         "class": "top"
       },
       {
-        "img": "/images/roasting_coffee.jpg",
+        "img": "/images/roasting_coffee.png",
         "link": "{LINK||menu_link}"
       },
       {
-        "img": "/images/location_hours.jpg",
+        "img": "/images/location_hours.png",
         "link": "{LINK||location_hours_link}",
         "content": {
           "class": "show location-hours",
@@ -30,7 +30,7 @@
         }
       },
       {
-        "img": "/images/bloc_card.jpg",
+        "img": "/images/bloc_card.png",
         "link": "{LINK||bloc_card_link}",
         "content": {
           "class": "hide bloc-card",
@@ -70,7 +70,7 @@
         }
       },
       {
-        "img": "/images/canopy.jpg",
+        "img": "/images/canopy.png",
         "link": "{LINK||canopy_love_link}",
         "content": {
           "class": "hide canopy-love",
@@ -99,9 +99,39 @@
       },
       {
         "img": "",
-        "link": "{LINK||about_link}"
+        "link": "{LINK||about_link}",
+        "content": {
+          "class": "hide about",
+          "details": [
+            {
+              "subheading": "Drive-Up Coffee",
+              "text": [
+                "CupLux is a start-up coffee company opening its doors in February 2017.  We are proud to be a part of the burgeoning coffee scene here in Charlotte and hope to become the city's favorite drive-up coffee shop.  We offer a variety of coffees and coffee drinks from Stumptown Coffee Roasters and local, North Carolina roasters.  And if you are in the mood for some food, we have a rotating selection of fresh baked bisquits and delicious spreads."
+              ]
+            },
+            {
+              "subheading": "Experience",
+              "text": [
+                "Besides providing coffees that are on-par with your favorite sit down shop, we work hard to bring you the best patron experience.  When you stop by, expect not only specialty level coffee, but service that sets the bar high.  Our baristas are courteous, knowledgeable and passionate about what they do.  So if you are intrigued about what's going on in coffee both in Charlotte and abroad - ask away - we loving dropping knowledge and talking coffee."
+              ]
+            },
+            {
+              "subheading": "Our Coffee",
+              "text": [
+                "Coffee today is no longer just a cup o' joe.  Much like wine, coffees from different regions or varietals have distinct flavors and characteristics. Our coffee roasters work hard to highlight these qualities.   Once the roasted coffee arrives at our shop, we follow through with the entire process of farm to cup, by brewing coffees to the standards set by the Specialty Coffee Association of America.  What this means for you is a cup of coffee that is never sour or bitter - but just right. No more running to the sugar and cream station out of fear of a bad cup o' joe.  Ask your barista about specific coffees to help you decide which one is best for you."
+              ]
+            }
+          ]
+        }
       }
-    ]
+    ],
+    "social": {
+      "small": [
+        "facebook",
+        "twitter",
+        "instagram"
+      ]
+    }
   },
   "LINKS": {
     "menu_link": {
@@ -135,7 +165,8 @@
       "id": "about-link",
       "class": "links",
       "content": "ABOUT",
-      "href": "#"
+      "href": "#",
+      "data-destination": "about"
     }
   }
 }

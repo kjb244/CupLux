@@ -7,36 +7,59 @@ body {
   font-family: 'camptonlight'; }
 .mainModule .hide {
   display: none; }
-.mainModule .parent.show-for-medium-up .menu {
+.mainModule .show-for-small-only .heading {
+  text-align: center;
+  font-weight: bold; }
+.mainModule .show-for-small-only .subheading {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 90%; }
+.mainModule .show-for-small-only .paras p {
+  line-height: 1.3rem; }
+.mainModule .show-for-small-only .social ul {
+  text-align: center;
+  padding-top: 5px; }
+  .mainModule .show-for-small-only .social ul li {
+    display: inline-block;
+    float: none; }
+    .mainModule .show-for-small-only .social ul li i {
+      transition: transform .3s linear; }
+      .mainModule .show-for-small-only .social ul li i:hover {
+        transform: scale(1.2, 1.2); }
+.mainModule .show-for-medium-up .menu {
   float: left;
   border-right: 4px solid #5a2b81; }
-  .mainModule .parent.show-for-medium-up .menu img {
+  .mainModule .show-for-medium-up .menu img {
     width: 100px; }
-  .mainModule .parent.show-for-medium-up .menu ul {
+  .mainModule .show-for-medium-up .menu ul {
     margin-left: 0; }
-    .mainModule .parent.show-for-medium-up .menu ul > li:not(:last-child) {
+    .mainModule .show-for-medium-up .menu ul > li:first-child img {
+      width: 150px;
+      margin-bottom: 10px;
+      margin-top: 10px; }
+    .mainModule .show-for-medium-up .menu ul > li:not(:last-child) {
       border-bottom: 2px solid #5a2b81; }
-    .mainModule .parent.show-for-medium-up .menu ul > li:not(:first-child) {
+    .mainModule .show-for-medium-up .menu ul > li:not(:first-child) {
       border-top: 2px solid #5a2b81; }
-    .mainModule .parent.show-for-medium-up .menu ul li {
+    .mainModule .show-for-medium-up .menu ul li {
       list-style-type: none;
       margin: 8px 0; }
-      .mainModule .parent.show-for-medium-up .menu ul li .container {
+      .mainModule .show-for-medium-up .menu ul li .container {
         text-align: center; }
-.mainModule .parent.show-for-medium-up .main {
-  margin-left: 250px; }
-  .mainModule .parent.show-for-medium-up .main .top img {
+.mainModule .show-for-medium-up .main {
+  margin-left: 210px; }
+  .mainModule .show-for-medium-up .main .top img {
     display: block;
     margin: 0 auto;
-    height: 400px; }
-  .mainModule .parent.show-for-medium-up .main .bottom {
+    height: 280px; }
+  .mainModule .show-for-medium-up .main .bottom {
     background-color: #fafafa;
     padding: 20px;
-    margin: 10px; }
-    .mainModule .parent.show-for-medium-up .main .bottom .heading {
+    margin-right: 14px; }
+    .mainModule .show-for-medium-up .main .bottom .heading {
       text-align: center;
       font-weight: bold; }
-    .mainModule .parent.show-for-medium-up .main .bottom .subheading {
+    .mainModule .show-for-medium-up .main .bottom .subheading {
       font-weight: bold;
       margin-bottom: 0;
       font-size: 90%; }

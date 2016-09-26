@@ -18,7 +18,7 @@ $(document).ready(function(){
 		});
 	}
 
-	$target.find('a').on('click', function(){ 
+	$target.find('.show-for-medium-up a').on('click', function(){ 
 		
 		var destClass = $(this).attr('data-destination');
 

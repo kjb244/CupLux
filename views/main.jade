@@ -39,4 +39,19 @@ block content
                 .paras
                   each rec3 in rec2.text
                     p!= rec3
+      if content.social.small
+        .row.social
+          .small-12.columns.small-centered
+            ul.inline-list
+              each rec in content.social.small
+                li
+                  if rec == "facebook"
+                    a(href="#")
+                      i.fa.fa-facebook-official.fa-2x
+                  else if rec == "twitter"
+                    a(href="#")
+                      i.fa.fa-twitter-square.fa-2x
+                  else if rec == "instagram"
+                    a(href="#")
+                      i.fa.fa-instagram.fa-2x
   script(src='/javascripts/main.js')
