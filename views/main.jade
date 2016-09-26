@@ -3,29 +3,40 @@ extends layout
 block content
   div(class="#{content.headerClass}")
     section.parent.show-for-medium-up
-      .row.collapse(data-equalizer)
-        .small-3.columns.menu(data-equalizer-watch)
+        .menu
           ul
             each rec in content.nodes
               li
                 div.container
-                  img(src= rec.img)
+                  if rec.img != ""
+                    img(src= rec.img)
                   p!= rec.link
-        .small-9.columns.main(data-equalizer-watch)
+        .main
           each rec in content.nodes
             if rec.content
-              .row(class=rec.content.class)
-                .small-12.columns.small-centered
-                  .row
-                    .top
-                      img(src=rec.img)
-                  .row
-                    .bottom.small-11.columns.small-centered
-                      h3.heading!= rec.content.heading
-                      each rec2 in rec.content.details
-                        if rec2.subHeading
-                          h4.subheading!= rec2.subHeading
-                        .paras
-                          each rec3 in rec2.text
-                            p!= rec3
+              div(class=rec.content.class)
+                .top
+                  img(src=rec.img)
+                .bottom
+                  h3.heading!= rec.content.heading
+                  each rec2 in rec.content.details
+                    if rec2.subHeading
+                      h4.subheading!= rec2.subHeading
+                    .paras
+                      each rec3 in rec2.text
+                        p!= rec3
+    section.parent.show-for-small-only
+      each rec in content.nodes
+        .row
+          .small-12.columns
+            if rec.img != ""
+              img(src=rec.img)
+            if rec.content
+              h3.heading!= rec.content.heading
+              each rec2 in rec.content.details
+                if rec2.subHeading
+                  h4.subheading!= rec2.subHeading
+                .paras
+                  each rec3 in rec2.text
+                    p!= rec3
   script(src='/javascripts/main.js')

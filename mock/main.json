@@ -37,10 +37,33 @@
           "heading": "BLOC CARD",
           "details": [
             {
+              "subHeading": "/bläk/ (block)",
               "text": [
-                "We love trees, almost as much as we love coffee. Planting a tree can be a very special experience, one that can transcend time and serve as reminder of those who have come and gone",
-                "In addition to the contributions we receive from the purchase of a Block Card, we'll be bolstering local efforts to improve Charlotte's Tree Canopy. By working with our close partners at Trees Charlotte we'll do our part to help plant new trees, take care of existing and help educate the public on what needs to be done to preserve this beautiful canopy.",
-                "Along the way we'll track progress and share it with you. Although we're just a small business starting out, our impact will grow as we do"
+                "a combination of people, parties, or groups sharing a common purpose."
+              ]
+            },
+            {
+              "subHeading": "What is it?",
+              "text": [
+                "The CupLux Bloc card is our version of a loyalty program.  With it you are showing your support for our Canopy Love campaign and as a reward you get 10% back on all purchases at CupLux to put towards future visits."
+              ]
+            },
+            {
+              "subHeading": "How Do I Join?",
+              "text": [
+                "You can sign-up online ahead of time and pick-up your card at the store, or you can just sign-up next time you stop by."
+              ]
+            },
+            {
+              "subHeading": "How does it work?",
+              "text": [
+                "Simple. You get 10% back on everything you buy at CupLux.  The running balance from those purchases is kept on your card, and you can use it whenver you want, for food or drink.  Easy Peasy."
+              ]
+            },
+            {
+              "subHeading": "Member Fee",
+              "text": [
+                "There is an annual $5.00 membership fee to join the Bloc.  We use the profits from this membership fee to drive our Canopy Love Campaign, which helps preserve and expand the tree canopy here in Charlotte.  Click here to learn more about Canopy Love."
               ]
             }
           ]
@@ -54,11 +77,21 @@
           "heading": "CANOPY LOVE",
           "details": [
             {
-              "subHeading": "Test",
               "text": [
-                "1",
-                "2",
-                "3"
+                "We love trees, almost as much as we love coffee.  Charlotte has one of the greatest tree canopies in the country.  This canopy makes our city more beautiful, keeps us cooler during the summer and provides a habitat for wildlife.  This canopy however, doesn't exist without a lot of  TLC (Tree Loving Care)!",
+                "Our Canopy Love campaign uses profits we generate from selling Bloc Memberships to bolster local efforts to maintain and increase Charlotte's Tree Canopy.  By working closely with our expert partners at TreesCharlotte,  we'll plant new trees, take care of existing ones and help educate the public on what we all can do to keep our canopy beautiful."
+              ]
+            },
+            {
+              "subHeading": "Why?",
+              "text": [
+                "We believe its important for all businesses and residents to give back their communites in some way shape or form.  For us that means creating positive, visible impact through Canopy Love and other conservation related activities."
+              ]
+            },
+            {
+              "subHeading": "Partners",
+              "text": [
+                "TreesCharlotte Logo, Catawba Land Conservancy Logo, Etc"
               ]
             }
           ]

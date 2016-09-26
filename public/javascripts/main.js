@@ -10,7 +10,7 @@ $(document).ready(function(){
 			return;
 		}
 
-		$target.find('.main >.row.show').fadeOut(200, function(){
+		$target.find('.main .show').fadeOut(200, function(){
 			$target.find(clazz).fadeIn(1000).addClass('show');
 	
 				$(this).removeClass('show').addClass('hide');
