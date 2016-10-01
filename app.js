@@ -24,12 +24,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+var port = process.env.PORT || 3000;
 
 app.use('/', routes);
 
 
 
-app.listen(3000, function(){
+app.listen(port, function(){
   console.log('server running on port 3000');
 });
 
