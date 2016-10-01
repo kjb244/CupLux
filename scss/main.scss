@@ -37,6 +37,31 @@ body{
 			line-height: 1.3rem;
 		}
 
+		img{
+			width: 200px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.header, .main{
+			width: 100%;
+		}
+
+		.header{
+			position: fixed;
+			height: 150px;
+			z-index: 100;
+			background-color: #d2cccc;
+		}
+
+		.main{
+			position: absolute;
+			margin-top: 150px;
+			z-index: 10;
+		}
+
+
+
 		.social{
 			ul{
 				text-align: center;

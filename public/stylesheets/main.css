@@ -16,6 +16,21 @@ body {
   font-size: 90%; }
 .mainModule .show-for-small-only .paras p {
   line-height: 1.3rem; }
+.mainModule .show-for-small-only img {
+  width: 200px;
+  display: block;
+  margin: 0 auto; }
+.mainModule .show-for-small-only .header, .mainModule .show-for-small-only .main {
+  width: 100%; }
+.mainModule .show-for-small-only .header {
+  position: fixed;
+  height: 150px;
+  z-index: 100;
+  background-color: #d2cccc; }
+.mainModule .show-for-small-only .main {
+  position: absolute;
+  margin-top: 150px;
+  z-index: 10; }
 .mainModule .show-for-small-only .social ul {
   text-align: center;
   padding-top: 5px; }
