@@ -14,8 +14,12 @@ body{
 
 	
 
-	p, h3, h4{
+	p, .subheading{
 		font-family: 'camptonlight';
+	}
+
+	.heading{
+		font-family: 'camptonbold';
 	}
 
 	.hide{
@@ -93,6 +97,11 @@ body{
 			border-right: 4px solid $menuborder;
 			img {
 				width: 100px;
+			}
+
+			.container p{
+				max-width: 90%;
+				line-height: 1.1rem;
 			}
 
 			ul{

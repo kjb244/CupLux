@@ -3,8 +3,10 @@ body {
 
 .mainModule .row {
   max-width: 400rem; }
-.mainModule p, .mainModule h3, .mainModule h4 {
+.mainModule p, .mainModule .subheading {
   font-family: 'camptonlight'; }
+.mainModule .heading {
+  font-family: 'camptonbold'; }
 .mainModule .hide {
   display: none; }
 .mainModule .show-for-small-only .heading {
@@ -46,6 +48,9 @@ body {
   border-right: 4px solid #5a2b81; }
   .mainModule .show-for-medium-up .menu img {
     width: 100px; }
+  .mainModule .show-for-medium-up .menu .container p {
+    max-width: 90%;
+    line-height: 1.1rem; }
   .mainModule .show-for-medium-up .menu ul {
     margin-left: 0; }
     .mainModule .show-for-medium-up .menu ul > li:first-child img {
