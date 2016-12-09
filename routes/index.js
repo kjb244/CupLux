@@ -13,7 +13,13 @@ router.get('/main', function(req, res){
 	let template = { title: titles['main'] || ''};
 	main = utils.jsonHelper(main);
 	let obj = _.extend(template, main);
-	res.render('main', obj);
+	let helpers = {
+		test: function(){
+			return "kevin";
+		}
+	}
+	obj = _.extend(obj, helpers);
+	res.render('testing', obj);
 
 });
 
