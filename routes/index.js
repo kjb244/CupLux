@@ -3,24 +3,17 @@ var express = require('express');
 var router = express.Router();
 var _ = require('underscore');
 var utils = require('./utilities.js');
-var main = require('../mock/main.json');
-var titles = require('../mock/titles.json');
+var path = require('path');
 
-
+let buildDirectory = path.join(__dirname, '../', '/build/');
 
 
 router.get('/main', function(req, res){
-	let template = { title: titles['main'] || ''};
-	main = utils.jsonHelper(main);
-	let obj = _.extend(template, main);
-	let helpers = {
-		test: function(){
-			return "kevin";
-		}
-	}
-	obj = _.extend(obj, helpers);
-	res.render('testing', obj);
+	res.sendFile(buildDirectory + 'main.html');
+});
 
+router.get('/main2', function(req, res){
+	res.sendFile(buildDirectory + 'main2.html');
 });
 
 module.exports = router;

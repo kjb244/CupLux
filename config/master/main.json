@@ -1,0 +1,17 @@
+{
+  "url": "main",
+  "modules": [
+    {
+      "name": "header-module",
+      "copy": "header-module.json"
+    },
+    {
+      "name": "body-module",
+      "copy": "body-module.json"
+    },
+    {
+      "name": "footer-module",
+      "copy": "footer-module.json"
+    }
+  ]
+}
