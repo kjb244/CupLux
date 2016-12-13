@@ -5,6 +5,7 @@ var fs = require('fs');
 var handlebars = require('handlebars');
 var sass = require('node-sass');
 var fsExtra = require('fs-extra');
+var utils = require('./utilities/utilities.js');
 
 module.exports = function(grunt) {
 	grunt.initConfig({
@@ -48,7 +49,9 @@ module.exports = function(grunt) {
 	grunt.registerTask("buildTask", function(){
 		//loop through page setup
 		let configPath = path.join(__dirname, 'config');
+		let buildPath = path.join(__dirname, 'build');
 		let configFoldersArr = fs.readdirSync(configPath);
+		rmDir(buildPath);
 		for(let i in configFoldersArr){
 			
 			let innerPathArr = fs.readdirSync(configPath + "\\" + configFoldersArr[i]);
@@ -66,7 +69,12 @@ module.exports = function(grunt) {
 						//hbs
 						//get copy
 						let copyPath = path.join(__dirname, 'copy') + "\\" + configFoldersArr[i] + "\\" + module + "\\" + moduleRec.copy;
-						let copyJson = JSON.parse(fs.readFileSync(copyPath));
+						
+						let copyJson = utils.linkHelper(JSON.parse(fs.readFileSync(copyPath)));
+						copyJson = utils.imageHelper(copyJson);
+						copyJson = JSON.parse(copyJson);
+
+
 						let hbsPath = componentsPath + "\\" + module + "\\" + "template" + "\\" + module + ".handlebars";
 						let hbsFile = fs.readFileSync(hbsPath).toString();
 						let template = handlebars.compile(hbsFile);
@@ -80,6 +88,11 @@ module.exports = function(grunt) {
 									});
 						css = new Buffer(css.css, 'utf8'); 
 						moduleObj['css'] = (moduleObj['css'] || '') + ' ' + css;
+
+						//put js into string
+						let jsPath = componentsPath + "\\" + module + "\\" + "javascript" + "\\" + module + ".js";
+						let js = fs.readFileSync(jsPath).toString();
+						moduleObj['js'] = (moduleObj['js'] || '') + ' ' + js;
 						
 						
 
@@ -88,40 +101,43 @@ module.exports = function(grunt) {
 				});
 
 				
-				let buildDirectory = path.join(__dirname, 'build');
 				let fileName;
 
-				//delete all files in build directory
+				//copy all files over from public
 				if (i==0 && j ==0){
-					rmDir(buildDirectory)
-
-					//copy all files over from public
-					fsExtra.copySync(path.join(__dirname, 'public'), buildDirectory);
+					
+					fsExtra.copySync(path.join(__dirname, 'public'), buildPath);
 				}
 
 
 				//ensure we have /images, /javascripts, and /stylesheets
-				mkDir(buildDirectory + "\\images");
-				mkDir(buildDirectory + "\\javascripts");
-				mkDir(buildDirectory + "\\stylesheets");
+				mkDir(buildPath + "\\images");
+				mkDir(buildPath + "\\javascripts");
+				mkDir(buildPath + "\\stylesheets");
 
 				
 				//write css file to file system
-				fileName = buildDirectory + "\\" + "stylesheets" + "\\" + moduleObj['url'] + ".css";
+				fileName = buildPath + "\\" + "stylesheets" + "\\" + moduleObj['url'] + ".css";
 				fs.writeFile(fileName, moduleObj['css']);
+
+				//write js to file system
+				fileName = buildPath + "\\" + "javascripts" + "\\" + moduleObj['url'] + ".js";
+				fs.writeFile(fileName, "$(document).ready(function(){ " + moduleObj['js'] + "})");
 
 				//create head tag
 				let foundationCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/foundation.min.css'>";
-				let moduleCombinedCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/" + moduleObj['url'] + ".css'>";
+				let moduleCombinedCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/" + moduleObj['url'] + 
+										".css'>";
 				let jqueryJS = "<script src='/javascripts/jquery.js'></script>";
 				let foundationJS = "<script src='/javascripts/foundation.min.js'></script>";
-				let head = "<head>" + foundationCss + moduleCombinedCss + jqueryJS + foundationJS +  "</head>";
+				let jsDocumentReady2 = "<script src='/javascripts/" + moduleObj['url'] + ".js'></script>";
+				let head = "<head>" + foundationCss + moduleCombinedCss + jqueryJS + foundationJS + jsDocumentReady2 +  "</head>";
 
 
 				//finally write html file to file system
 				moduleObj['html'] = "<html><title></title>" + head + "<body>" + moduleObj['html'] + "</body></html>";
-				fileName = buildDirectory + "\\" + moduleObj['url'] + ".html"
-				fs.writeFile(fileName, moduleObj['html'], function(err){ console.log('error',err)});
+				fileName = buildPath + "\\" + moduleObj['url'] + ".html"
+				fs.writeFile(fileName, moduleObj['html']);
 			}
 			
 			

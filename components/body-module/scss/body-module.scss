@@ -1,6 +1,18 @@
-.body-module{
+[data-module-body-module]{
+	.background-image-test{
+		height: 50px;
+		width: 50px;
+		background-image: url('/images/main/header-module/bloc_card.jpg');
+		background-size: 100% 100%;
+	}
 	
-	.text{
-		font-size: 100%;
-	}	
+	li{
+		display:flex;
+		align-items: center;
+	}
+
+	li > div:first-child{
+		margin-right: 20px;
+	}
+	
 }

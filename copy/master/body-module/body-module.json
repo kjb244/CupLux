@@ -1,6 +1,18 @@
 {
   "content": [
-    "1",
-    "2"
-  ]
+    {
+      "img": "{IMAGE||imageBlocCard}",
+      "text": "hello"
+    },
+    {
+      "img": "{IMAGE||imageBlocCard}",
+      "text": "hello2"
+    }
+  ],
+  "IMAGE": {
+    "imageBlocCard": {
+      "src": "images/main/header-module/bloc_card.jpg",
+      "class": "background-image-test"
+    }
+  }
 }

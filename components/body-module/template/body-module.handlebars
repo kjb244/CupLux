@@ -1,8 +1,19 @@
 <section>
-	{{#each content}}
-		<p>{{this}}</p>
-	{{/each}}
-	Kevin
+
+	<ul>
+		{{#each content}}
+			<li>
+				{{{this.img}}}
+				<div>
+					{{{this.text}}}
+
+				</div>
+
+			</li>
+		{{/each}}
+
+
+	</ul>
 
 
 </section>

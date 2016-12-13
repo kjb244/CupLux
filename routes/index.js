@@ -2,7 +2,6 @@
 var express = require('express');
 var router = express.Router();
 var _ = require('underscore');
-var utils = require('./utilities.js');
 var path = require('path');
 
 let buildDirectory = path.join(__dirname, '../', '/build/');

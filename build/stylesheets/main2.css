@@ -1,4 +1,14 @@
  .header-module .test {
   text-align: center; }
- .body-module .text {
-  font-size: 100%; }
+ [data-module-body-module] .background-image-test {
+  height: 50px;
+  width: 50px;
+  background-image: url("/images/main/header-module/bloc_card.jpg");
+  background-size: 100% 100%; }
+
+[data-module-body-module] li {
+  display: flex;
+  align-items: center; }
+
+[data-module-body-module] li > div:first-child {
+  margin-right: 20px; }
