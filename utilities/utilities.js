@@ -46,7 +46,7 @@ exports.imageHelper = function(inp){
 			//if folder then create it
 			if (folder){
 				pathTemp = path.join(pathTemp, fileArr[j]);
-				//createFolder(pathTemp)
+				createFolder(pathTemp)
 			}
 			//if file then copy it
 			else{
