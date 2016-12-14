@@ -18,7 +18,6 @@ exports.imageHelper = function(inp){
 	
 
 	//put in div in jcr
-
 	for(let key in imageObj){
 
 		let dataDest = "/" + imageObj[key]['src'];
@@ -28,7 +27,7 @@ exports.imageHelper = function(inp){
 		let imageMatcher = "{IMAGE\\|\\|" + key + "}";
 
 		let re = new RegExp(imageMatcher, 'g');
-		inp = inp.replace(re,  div);
+		inp = inp.replace(re, div);
 
 
 		srcArr.push(imageObj[key]['src']);
@@ -73,37 +72,34 @@ exports.imageHelper = function(inp){
 
 
 exports.linkHelper = function(inp){
-	//do links
-	var links = {};
-	var key;
-	var key2;
-	//create link id and content
-	for(key in inp.LINKS){
+	//convert to json object
+	inp = JSON.parse(inp);
 
+	let links = inp.LINKS || {};
 
-		var aTag = '<a';
-		var node = inp.LINKS[key];
+	//convert back to json string
+	inp = JSON.stringify(inp);
 
-		for(var key2 in node){
+	for(let key in links){
+		let aTag = '<a';
+		let node = links[key] || {};
+
+		for(let key2 in node){
 			if (! /content/.test(key2)){
 				aTag += " " + key2 + "='" + node[key2] + "'";
 			}
 		}
-		
+
 		aTag += '>';
 		aTag += node.content || '';
 		aTag += '</a>'
-		
-		links[key] = aTag;
-	}
 
-	//convert entire json to string and start replacing
-	inp = JSON.stringify(inp);
+		let linkMatcher = "{LINK\\|\\|" + key + "}";
+
+		let re = new RegExp(linkMatcher, 'g');
+		inp = inp.replace(re, aTag);
 
 
-	//loop through links object and replace
-	for(key in links){
-		inp = inp.replace('"{LINK||' + key + '}"', '"' + links[key] + '"');
 	}
 
 	//return string
