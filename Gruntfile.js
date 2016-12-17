@@ -70,49 +70,72 @@ module.exports = function(grunt) {
 			for(let j in innerPathArr){
 				let innerFile = path.join(configPath, configFoldersArr[i], innerPathArr[j]);
 				let jsConfigObj = JSON.parse(fs.readFileSync(innerFile));
-				let moduleObj = {'url': jsConfigObj.url};
+				let moduleObj = {'url': jsConfigObj.url, 'title': jsConfigObj.title || ''};
 
 				//loop through modules in config
 				jsConfigObj.modules.forEach(function(moduleRec){
-					//grab the modules now from the components folder
-					let componentsPathModuleArr = fs.readdirSync(componentsPath);
-					//find the corect module we're on
-					let module = componentsPathModuleArr.filter(function(rec){ return rec == moduleRec.name; })[0];
 
-					//if it exists
-					if (module){
+					let type = moduleRec.type;
+					let masterSectionWrapper = '<section data-module-' + type + '>';
+				
+					//loop through the module types: header, body, and footer
+					moduleRec.modules.forEach(function(moduleRecInner){
 
-						//jcr path
-						let copyPathJCR = path.join(copyPath, configFoldersArr[i], module,  moduleRec.copy);
-						
-						//put through link and image helper
-						let copyJson = utils.linkHelper(fs.readFileSync(copyPathJCR));
-						copyJson = utils.imageHelper(copyJson);
-						copyJson = JSON.parse(copyJson);
 
-						//compile html into hbs and create <div> module
-						let hbsPath = path.join(componentsPath, module, "template", module + ".handlebars");
-						let hbsFile = fs.readFileSync(hbsPath).toString();
-						let template = handlebars.compile(hbsFile);
-						let html = template(copyJson);
-						let wrapper = "<div data-module-" + module + ">" + html + "</div>";
-						moduleObj['html'] = (moduleObj['html'] || '') + wrapper;
+						//grab the modules now from the components folder
+						let componentsPathModuleArr = fs.readdirSync(componentsPath);
+						//find the corect module we're on
+						let module = componentsPathModuleArr.filter(function(rec){ return rec == moduleRecInner.name; })[0];
 
-						
-						//do sass
-						let css = sass.renderSync({
-									file: path.join(componentsPath, module, "scss", module + ".scss")
-									});
-						css = new Buffer(css.css, 'utf8'); 
-						moduleObj['css'] = (moduleObj['css'] || '') + ' ' + css;
+						//if it exists
+						if (module){
 
-						//do js
-						let jsPath = path.join(componentsPath,  module, "javascript", module + ".js");
-						let js = fs.readFileSync(jsPath).toString();
-						moduleObj['js'] = (moduleObj['js'] || '') + ' ' + js;
+							//jcr path
+							let copyPathJCR = path.join(copyPath, configFoldersArr[i], module,  moduleRecInner.copy);
+							
+							//put through link and image helper
+							let copyJson = utils.linkHelper(fs.readFileSync(copyPathJCR));
+							copyJson = utils.imageHelper(copyJson);
+							copyJson = JSON.parse(copyJson);
 
-					}
 
+							//compile html into hbs and create <div> module
+							let hbsPath = path.join(componentsPath, module, "template", module + ".handlebars");
+							let hbsFile = fs.readFileSync(hbsPath).toString();
+							//do helpers
+							let helperPath = path.join(componentsPath, module, "helpers", module + "-helper.js");
+							if (existsDir(helperPath)){
+								let jsHelper = require(helperPath);
+								let jsKeys = Object.keys(jsHelper);
+								jsKeys.forEach(function(rec){
+									handlebars.registerHelper(rec, jsHelper[rec]());
+								});
+							}
+
+							let template = handlebars.compile(hbsFile);
+							let html = template(copyJson);
+							let wrapper = "<div data-module-" + module + ">" + html + "</div>";
+
+							moduleObj['html' + type] = (moduleObj['html' + type]  || '') + wrapper;
+
+							//do sass
+							let css = sass.renderSync({
+										file: path.join(componentsPath, module, "scss", module + ".scss")
+										});
+							css = new Buffer(css.css, 'utf8'); 
+							moduleObj['css'] = (moduleObj['css'] || '') + ' ' + css;
+
+							//do js
+							let jsPath = path.join(componentsPath,  module, "javascript", module + ".js");
+							let js = fs.readFileSync(jsPath).toString();
+							moduleObj['js'] = (moduleObj['js'] || '') + ' ' + js;
+
+						}
+
+					});
+					
+					masterSectionWrapper += moduleObj['html' + type] + '</section>'
+					moduleObj['html'] = (moduleObj['html'] || '') + masterSectionWrapper;
 				});
 
 				
@@ -133,17 +156,18 @@ module.exports = function(grunt) {
 				fs.writeFile(fileName, "$(document).ready(function(){ " + moduleObj['js'] + "})");
 
 				//create head tag
+				let title = "<title>" + moduleObj['title'] + "</title>";
 				let foundationCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/foundation.min.css'>";
 				let moduleCombinedCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/" + moduleObj['url'] + 
 										".css'>";
 				let jqueryJS = "<script src='/javascripts/jquery.js'></script>";
 				let foundationJS = "<script src='/javascripts/foundation.min.js'></script>";
 				let jsDocumentReady2 = "<script src='/javascripts/" + moduleObj['url'] + ".js'></script>";
-				let head = "<head>" + foundationCss + moduleCombinedCss + jqueryJS + foundationJS + jsDocumentReady2 +  "</head>";
+				let head = "<head>" + title + foundationCss + moduleCombinedCss + jqueryJS + foundationJS + jsDocumentReady2 +  "</head>";
 
 
 				//finally write html file to file system
-				moduleObj['html'] = "<html><title></title>" + head + "<body>" + moduleObj['html'] + "</body></html>";
+				moduleObj['html'] = "<html>" + head + "<body>" + moduleObj['html'] + "</body></html>";
 				fileName = path.join(buildPath, moduleObj['url'] + ".html");
 				fs.writeFile(fileName, moduleObj['html']);
 			}
@@ -172,6 +196,13 @@ module.exports = function(grunt) {
         }
       //fs.rmdirSync(dirPath);
     };
+
+    function existsDir (dirPath){
+    	if (fs.existsSync(dirPath)){
+    		return true;
+    	}
+    	return false;
+    }
 
     function mkDir (dirPath){
     	if (!fs.existsSync(dirPath)){

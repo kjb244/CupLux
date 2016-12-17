@@ -1,17 +1,37 @@
 {
   "url": "main",
+  "title": "testing title",
   "modules": [
     {
-      "name": "header-module",
-      "copy": "header-module.json"
+      "type": "header",
+      "modules": [
+        {
+          "name": "header-module",
+          "copy": "header-module.json"
+        },
+        {
+          "name": "body-module",
+          "copy": "body-module.json"
+        }
+      ]
     },
     {
-      "name": "body-module",
-      "copy": "body-module.json"
+      "type": "body",
+      "modules": [
+        {
+          "name": "body-module",
+          "copy": "body-module.json"
+        }
+      ]
     },
     {
-      "name": "footer-module",
-      "copy": "footer-module.json"
+      "type": "footer",
+      "modules": [
+        {
+          "name": "footer-module",
+          "copy": "footer-module.json"
+        }
+      ]
     }
   ]
 }
