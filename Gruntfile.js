@@ -72,11 +72,12 @@ module.exports = function(grunt) {
 				let jsConfigObj = JSON.parse(fs.readFileSync(innerFile));
 				let moduleObj = {'url': jsConfigObj.url, 'title': jsConfigObj.title || ''};
 
+				let masterDivWrapper = '<section data-module-master class="row">';
 				//loop through modules in config
 				jsConfigObj.modules.forEach(function(moduleRec){
 
 					let type = moduleRec.type;
-					let masterSectionWrapper = '<section data-module-' + type + '>';
+					let sectionWrapper = '<section data-module-' + type + '>';
 				
 					//loop through the module types: header, body, and footer
 					moduleRec.modules.forEach(function(moduleRecInner){
@@ -134,9 +135,11 @@ module.exports = function(grunt) {
 
 					});
 					
-					masterSectionWrapper += moduleObj['html' + type] + '</section>'
-					moduleObj['html'] = (moduleObj['html'] || '') + masterSectionWrapper;
+					sectionWrapper += moduleObj['html' + type] + '</section>';
+					moduleObj['html'] = (moduleObj['html'] || '') + sectionWrapper;
 				});
+
+				moduleObj['html'] = masterDivWrapper +  moduleObj['html'] + '</section>';
 
 				
 				let fileName;
