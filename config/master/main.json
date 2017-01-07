@@ -6,32 +6,18 @@
       "type": "header",
       "modules": [
         {
-          "name": "header-module",
-          "copy": "header-module.json"
-        },
-        {
-          "name": "body-module",
-          "copy": "body-module.json"
+          "name": "/master/engagement-module",
+          "copy": "engagement-module.json"
         }
       ]
     },
     {
       "type": "body",
-      "modules": [
-        {
-          "name": "body-module",
-          "copy": "body-module.json"
-        }
-      ]
+      "modules": []
     },
     {
       "type": "footer",
-      "modules": [
-        {
-          "name": "footer-module",
-          "copy": "footer-module.json"
-        }
-      ]
+      "modules": []
     }
   ]
 }

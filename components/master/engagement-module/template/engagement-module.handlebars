@@ -1,0 +1,21 @@
+{{#with content}}
+
+	<div class="row">
+		<div class="medium-12 medium-centered columns">
+			{{{this.header.img}}}
+		</div>
+
+	</div>
+	<div class="row">
+		<ul>
+			{{#each this.nav}}
+				<li>{{{this}}}</li>
+
+			{{/each}}
+
+
+		</ul>
+
+	</div>
+
+{{/with}}

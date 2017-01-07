@@ -72,6 +72,7 @@ module.exports = function(grunt) {
 				let jsConfigObj = JSON.parse(fs.readFileSync(innerFile));
 				let moduleObj = {'url': jsConfigObj.url, 'title': jsConfigObj.title || ''};
 
+
 				let masterDivWrapper = '<section data-module-master class="row">';
 				//loop through modules in config
 				jsConfigObj.modules.forEach(function(moduleRec){
@@ -82,9 +83,17 @@ module.exports = function(grunt) {
 					//loop through the module types: header, body, and footer
 					moduleRec.modules.forEach(function(moduleRecInner){
 
-
+						//get root directory
+						//first put into array ex: master, body-module
+						let rootPathModule = moduleRecInner.name.replace(/^\/{1}/,'').split('/');
+						//name is only body-module
+						moduleRecInner.name = rootPathModule[rootPathModule.length - 1];
+						//rootpath is only master
+						rootPathModule = rootPathModule[0];
+						
 						//grab the modules now from the components folder
-						let componentsPathModuleArr = fs.readdirSync(componentsPath);
+						let componentsPathModuleArr = fs.readdirSync(path.join(componentsPath, rootPathModule));
+						
 						//find the corect module we're on
 						let module = componentsPathModuleArr.filter(function(rec){ return rec == moduleRecInner.name; })[0];
 
@@ -92,7 +101,7 @@ module.exports = function(grunt) {
 						if (module){
 
 							//jcr path
-							let copyPathJCR = path.join(copyPath, configFoldersArr[i], module,  moduleRecInner.copy);
+							let copyPathJCR = path.join(copyPath, rootPathModule, module,  moduleRecInner.copy);
 							
 							//put through link and image helper
 							let copyJson = utils.linkHelper(fs.readFileSync(copyPathJCR));
@@ -101,10 +110,10 @@ module.exports = function(grunt) {
 
 
 							//compile html into hbs and create <div> module
-							let hbsPath = path.join(componentsPath, module, "template", module + ".handlebars");
+							let hbsPath = path.join(componentsPath, rootPathModule, module, "template", module + ".handlebars");
 							let hbsFile = fs.readFileSync(hbsPath).toString();
 							//do helpers
-							let helperPath = path.join(componentsPath, module, "helpers", module + "-helper.js");
+							let helperPath = path.join(componentsPath, rootPathModule, module, "helpers", module + "-helper.js");
 							if (existsDir(helperPath)){
 								let jsHelper = require(helperPath);
 								let jsKeys = Object.keys(jsHelper);
@@ -120,22 +129,27 @@ module.exports = function(grunt) {
 							moduleObj['html' + type] = (moduleObj['html' + type]  || '') + wrapper;
 
 							//do sass
-							let css = sass.renderSync({
-										file: path.join(componentsPath, module, "scss", module + ".scss")
-										});
-							css = new Buffer(css.css, 'utf8'); 
-							moduleObj['css'] = (moduleObj['css'] || '') + ' ' + css;
+							if (existsDir(path.join(componentsPath, rootPathModule, module, "scss", module + ".scss"))){
+								
+								let css = sass.renderSync({
+											file: path.join(componentsPath, rootPathModule, module, "scss", module + ".scss")
+											});
+								css = new Buffer(css.css, 'utf8'); 
+								moduleObj['css'] = (moduleObj['css'] || '') + ' ' + css;
+							}
 
 							//do js
-							let jsPath = path.join(componentsPath,  module, "javascript", module + ".js");
-							let js = fs.readFileSync(jsPath).toString();
-							moduleObj['js'] = (moduleObj['js'] || '') + ' ' + js;
+							if (existsDir(path.join(componentsPath, rootPathModule,  module, "javascript", module + ".js"))) {
+								let jsPath = path.join(componentsPath, rootPathModule,  module, "javascript", module + ".js");
+								let js = fs.readFileSync(jsPath).toString();
+								moduleObj['js'] = (moduleObj['js'] || '') + ' ' + js;
+							}
 
 						}
 
 					});
 					
-					sectionWrapper += moduleObj['html' + type] + '</section>';
+					sectionWrapper += (moduleObj['html' + type] || '') + '</section>';
 					moduleObj['html'] = (moduleObj['html'] || '') + sectionWrapper;
 				});
 

@@ -1,0 +1,30 @@
+{
+  "content": {
+    "header": {
+      "img": "{IMAGE||imageBlocCard}"
+    },
+    "nav": [
+      "{LINK||menu}",
+      "{LINK||locationAndHours}"
+    ]
+  },
+  "IMAGE": {
+    "imageBlocCard": {
+      "src": "images/main/engagement-module/bloc_card.jpg",
+      "class": "background-image-header-main"
+    }
+  },
+  "LINKS": {
+    "menu": {
+      "href": "#",
+      "id": "menu-link",
+      "content": "Menu"
+    },
+    "locationAndHours": {
+      "href": "#",
+      "id": "location-and-hours-link",
+      "content": "location and hours"
+    }
+  }
+}
+

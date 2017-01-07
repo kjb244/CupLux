@@ -15,6 +15,9 @@ exports.imageHelper = function(inp){
 
 	//reconvert to json
 	inp = JSON.stringify(inp);
+
+
+
 	
 
 	//put in div in jcr
@@ -32,7 +35,8 @@ exports.imageHelper = function(inp){
 
 		srcArr.push(imageObj[key]['src']);
 	}
-	
+
+
 
 	//copy files over
 	let buildPath = path.join(__dirname, '../', '/build');

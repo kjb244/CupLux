@@ -1,0 +1,17 @@
+
+$identifiers: "margin", "padding";
+
+$positions: "top", "left", "bottom", "right";
+
+
+
+@each $identRec in $identifiers{
+	@each $posRec in $positions{
+		@for $k from 1 through 100{
+			.#{$identRec}-#{$posRec}-#{$k} {
+				#{$identRec}-#{$posRec}: #{$k}px;
+			}
+		}
+
+	}
+}
