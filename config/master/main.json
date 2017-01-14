@@ -13,11 +13,29 @@
     },
     {
       "type": "body",
-      "modules": []
+      "modules": [
+        {
+          "name": "/master/one-column-content-module",
+          "copy": "one-column-content-module.json"
+        },
+        {
+          "name": "/master/image-interchange-module",
+          "copy": "image-interchange-module.json"
+        },
+        {
+          "name": "/master/two-column-content-module",
+          "copy": "two-column-content-module.json"
+        }
+      ]
     },
     {
       "type": "footer",
-      "modules": []
+      "modules": [
+        {
+          "name": "/master/footer-bottom-bar-module",
+          "copy": "footer-bottom-bar-module.json"
+        }
+      ]
     }
   ]
 }

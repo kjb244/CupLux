@@ -1,0 +1,19 @@
+{
+  "content": {
+    "text": "CupLux coffee 3115 Freedom Dr. Charlotte, NC",
+    "social": [
+      {
+        "type": "icon",
+        "class": "fa fa-facebook-official fa-2x"
+      },
+      {
+        "type": "icon",
+        "class": "fa fa-facebook-official fa-2x"
+      },
+      {
+        "type": "text",
+        "text": "@CupLux"
+      }
+    ]
+  }
+}

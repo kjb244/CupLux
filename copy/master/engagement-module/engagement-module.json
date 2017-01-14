@@ -5,12 +5,15 @@
     },
     "nav": [
       "{LINK||menu}",
-      "{LINK||locationAndHours}"
+      "{LINK||locationAndHours}",
+      "{LINK||rewards}",
+      "{LINK||natureForAll}",
+      "{LINK||about}"
     ]
   },
   "IMAGE": {
     "imageBlocCard": {
-      "src": "images/main/engagement-module/bloc_card.jpg",
+      "src": "images/main/engagement-module/cup_lux_main.png",
       "class": "background-image-header-main"
     }
   },
@@ -18,13 +21,27 @@
     "menu": {
       "href": "#",
       "id": "menu-link",
-      "content": "Menu"
+      "content": "MENU"
     },
     "locationAndHours": {
       "href": "#",
       "id": "location-and-hours-link",
-      "content": "location and hours"
+      "content": "LOCATION AND HOURS"
+    },
+    "rewards": {
+      "href": "#",
+      "id": "rewards-link",
+      "content": "REWARDS"
+    },
+    "natureForAll": {
+      "href": "#",
+      "id": "nature-for-all-link",
+      "content": "NATURE FOR ALL"
+    },
+    "about": {
+      "href": "#",
+      "id": "about-link",
+      "content": "ABOUT"
     }
   }
 }
-

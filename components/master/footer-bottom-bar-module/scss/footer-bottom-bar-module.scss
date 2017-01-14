@@ -1,0 +1,38 @@
+@import "../../../utils/global.scss";
+
+[data-module-footer-bottom-bar-module]{
+
+	footer{
+		position: relative;
+		height: 60px;
+
+		@media #{$large-up}{
+			height: 80px;
+		}
+
+
+		background-color: purple;
+
+		p{
+			text-align: center;
+			line-height: 60px;
+			margin: 0;
+			height: 100%;
+			color: white;
+		}
+
+
+
+		.social{
+			position: absolute;
+			top: 0;
+			right: 10px;
+			line-height: 60px;
+			color: white;
+		}
+	}
+
+
+	
+	
+}

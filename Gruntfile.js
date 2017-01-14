@@ -118,7 +118,9 @@ module.exports = function(grunt) {
 								let jsHelper = require(helperPath);
 								let jsKeys = Object.keys(jsHelper);
 								jsKeys.forEach(function(rec){
-									handlebars.registerHelper(rec, jsHelper[rec]());
+								
+									handlebars.registerHelper(rec, jsHelper[rec]);
+
 								});
 							}
 
@@ -175,12 +177,13 @@ module.exports = function(grunt) {
 				//create head tag
 				let title = "<title>" + moduleObj['title'] + "</title>";
 				let foundationCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/foundation.min.css'>";
+				let fontAwesomeCss = "<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>";
 				let moduleCombinedCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/" + moduleObj['url'] + 
 										".css'>";
 				let jqueryJS = "<script src='/javascripts/jquery.js'></script>";
 				let foundationJS = "<script src='/javascripts/foundation.min.js'></script>";
 				let jsDocumentReady2 = "<script src='/javascripts/" + moduleObj['url'] + ".js'></script>";
-				let head = "<head>" + title + foundationCss + moduleCombinedCss + jqueryJS + foundationJS + jsDocumentReady2 +  "</head>";
+				let head = "<head>" + title + foundationCss + fontAwesomeCss + moduleCombinedCss + jqueryJS + foundationJS + jsDocumentReady2 +  "</head>";
 
 
 				//finally write html file to file system

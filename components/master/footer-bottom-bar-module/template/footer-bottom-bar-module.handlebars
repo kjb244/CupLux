@@ -1,0 +1,30 @@
+{{#with content}}
+
+
+		<footer>
+			<p>{{{this.text}}}</p>
+			<div class="social">
+				{{#each this.social}}
+
+					{{#ifCond this.type '==' 'icon' }}
+						<i class="{{this.class}}"></i>
+					{{/ifCond}}
+
+					{{#ifCond this.type '==' 'text' }}
+						<span>{{this.text}}</span>
+					{{/ifCond}}
+
+
+
+				{{/each}}
+
+
+			</div>
+
+
+
+		</footer>
+
+
+
+{{/with}}
