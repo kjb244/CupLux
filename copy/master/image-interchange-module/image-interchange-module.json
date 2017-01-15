@@ -1,1 +1,27 @@
-{}
+{
+  "content": {
+    "dataOrbitOptions": "timer_speed:3000;",
+    "images": [
+      {
+        "img": "{IMAGE||imgageLightBulb}",
+        "alt": ""
+      },
+      {
+        "img": "{IMAGE||imgageLightBulb2}",
+        "alt": ""
+      }
+    ]
+  },
+  "IMAGE": {
+    "imgageLightBulb": {
+      "type": "image",
+      "src": "images/main/image-interchange-module/light-bulb-1.jpg",
+      "class": ""
+    },
+    "imgageLightBulb2": {
+      "type": "image",
+      "src": "images/main/image-interchange-module/light-bulb-2.jpg",
+      "class": ""
+    }
+  }
+}

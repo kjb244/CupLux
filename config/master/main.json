@@ -6,6 +6,10 @@
       "type": "header",
       "modules": [
         {
+          "name": "/global/common-module",
+          "copy": "common-module.json"
+        },
+        {
           "name": "/master/engagement-module",
           "copy": "engagement-module.json"
         }

@@ -2,16 +2,20 @@
 
 
 		<footer>
-			<p>{{{this.text}}}</p>
+			<div class="main-text">{{{this.text}}}</div>
 			<div class="social">
 				{{#each this.social}}
 
 					{{#ifCond this.type '==' 'icon' }}
-						<i class="{{this.class}}"></i>
+						<div>
+							<a href="{{this.href}}">
+								<i class="{{this.class}}"></i>
+							</a>
+						</div>
 					{{/ifCond}}
 
 					{{#ifCond this.type '==' 'text' }}
-						<span>{{this.text}}</span>
+						<div class="text">{{this.text}}</div>
 					{{/ifCond}}
 
 

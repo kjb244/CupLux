@@ -1,9 +1,23 @@
-
+@import "../../../utils/scss/foundation/_settings.scss";
 
 [data-module-image-interchange-module]{
 
 	margin-top: 30px;
 	font-size: 22px;
+	img{
+		width: 100%;
+		height: 250px;
+		@media #{$large-up}{
+
+			height: 400px;
+		}
+
+		@media #{$medium-only}{
+
+			height: 300px;
+		}
+	}
+
 
 	
 	

@@ -165,6 +165,19 @@ module.exports = function(grunt) {
 				mkDir(path.join(buildPath, "javascripts"));
 				mkDir(path.join(buildPath, "stylesheets"));
 
+				//compile foundation sass and add to /stylesheets
+				if (existsDir(path.join(componentsPath, "utils", "scss", "foundation.scss"))){
+					
+					let css = sass.renderSync({
+								file: path.join(componentsPath, "utils", "scss", "foundation.scss")
+								});
+					css = new Buffer(css.css, 'utf8'); 
+
+					fileName = path.join(buildPath, "stylesheets", "foundation.css");
+					fs.writeFile(fileName, css);
+					
+				}
+
 				
 				//write css file to file system
 				fileName = path.join(buildPath, "stylesheets",  moduleObj['url'] + ".css");
@@ -176,14 +189,19 @@ module.exports = function(grunt) {
 
 				//create head tag
 				let title = "<title>" + moduleObj['title'] + "</title>";
-				let foundationCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/foundation.min.css'>";
+				let foundationMetaTag = "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
+				let camptonBoldCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/campton_bold_macroman/stylesheet.css'>";
+				let camptonLightCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/campton_light_macroman/stylesheet.css'>";
+				let foundationCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/foundation.css'>";
 				let fontAwesomeCss = "<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>";
 				let moduleCombinedCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/" + moduleObj['url'] + 
 										".css'>";
 				let jqueryJS = "<script src='/javascripts/jquery.js'></script>";
 				let foundationJS = "<script src='/javascripts/foundation.min.js'></script>";
 				let jsDocumentReady2 = "<script src='/javascripts/" + moduleObj['url'] + ".js'></script>";
-				let head = "<head>" + title + foundationCss + fontAwesomeCss + moduleCombinedCss + jqueryJS + foundationJS + jsDocumentReady2 +  "</head>";
+				let head = "<head>" + title + foundationMetaTag +  camptonBoldCss + camptonLightCss + 
+				           foundationCss + fontAwesomeCss + moduleCombinedCss + jqueryJS + foundationJS + 
+				           jsDocumentReady2 +  "</head>";
 
 
 				//finally write html file to file system

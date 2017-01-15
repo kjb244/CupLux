@@ -1,17 +1,20 @@
+@import "../../../utils/scss/foundation/_settings.scss";
 
-.row{
-	max-width: 80rem;
-}
-
-.row .row{
-	margin-left: 0;
-	margin-right: 0;
-}
 
 [data-module-engagement-module]{
+
 	.background-image-header-main{
-		height: 310px;
-		width: 350px;
+		height: 264px;
+		width: 300px;
+		@media #{$medium-only}{
+			height: 280px;
+			width: 320px;
+		}
+		@media #{$large-up}{
+			height: 310px;
+			width: 350px;
+		}
+
 		margin: auto;
 		background-image: url('/images/main/engagement-module/cup_lux_main.png');
 		background-size: 100% 100%;
@@ -19,13 +22,15 @@
 
 	nav .top-bar-section{
 		ul{
-			display: flex;
-			
-			justify-content: space-between;
-			width: 100%;
-			background-color: white;
-			border-top: 2px solid purple;
-			border-bottom: 2px solid purple;
+			@media #{$medium-up}{
+				display: flex;
+				
+				justify-content: space-between;
+				width: 100%;
+				background-color: white;
+				border-top: 2px solid purple;
+				border-bottom: 2px solid purple;
+			}
 
 		}
 
@@ -34,6 +39,14 @@
 		li a{
 			background: white !important;
 			color: purple;
+			font-size: 14px;
+			font-weight: bold;
+			@media #{$medium-only}{
+				font-size: 16px;
+			}
+			@media #{$large-up}{
+				font-size: 18px;
+			}
 		}
 
 		li a:hover{

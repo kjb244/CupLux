@@ -1,17 +1,12 @@
+body *{
+	font-family: 'camptonlight';
+}
 
-$identifiers: "margin", "padding";
+.row{
+	max-width: 80rem;
+}
 
-$positions: "top", "left", "bottom", "right";
-
-
-
-@each $identRec in $identifiers{
-	@each $posRec in $positions{
-		@for $k from 1 through 100{
-			.#{$identRec}-#{$posRec}-#{$k} {
-				#{$identRec}-#{$posRec}: #{$k}px;
-			}
-		}
-
-	}
+.row .row{
+	margin-left: 0;
+	margin-right: 0;
 }

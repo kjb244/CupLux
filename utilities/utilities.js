@@ -22,11 +22,16 @@ exports.imageHelper = function(inp){
 
 	//put in div in jcr
 	for(let key in imageObj){
-
+		let type = imageObj[key]['type'] || 'div';
 		let dataDest = "/" + imageObj[key]['src'];
 		let clazz = imageObj[key]['class'] || '';
 		let id = imageObj[key]['id'] || '';
+
+
 		let div = "<div class='" + clazz + "' id='" + id + "' " + "data-dest='" + dataDest + "'></div>";
+		if (type == 'image'){
+			div = "<image src='" + dataDest + "' class='" + clazz + "' id='" + id + "'></image>";
+		}
 		let imageMatcher = "{IMAGE\\|\\|" + key + "}";
 
 		let re = new RegExp(imageMatcher, 'g');

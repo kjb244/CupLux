@@ -1,14 +1,44 @@
-
+@import "../../../utils/scss/foundation/_settings.scss";
 
 [data-module-two-column-content-module]{
 
-	.content-left, .content-right{
-		height: 300px;
-		background-color: gray;
+	margin-top: 15px;
+
+	@media #{$medium-only}{
+
+		margin-top: 20px;
 	}
 
-	.medium-6.columns{
-		width: 49%;
+	@media #{$large-up}{
+
+		margin-top: 25px;
+	}
+
+	.content-left, .content-right{
+		height: 200px;
+		background-color: gray;
+
+		@media #{$medium-only}{
+			height: 250px;
+		}
+
+		@media #{$large-up}{
+			height: 300px;
+		}
+
+	}
+
+	@media #{$small-only}{
+		.content-right{
+			margin-top: 10px;
+		}
+	}
+
+	@media #{$medium-up}{
+
+		.medium-6.columns{
+			width: 49%;
+		}
 	}
 
 

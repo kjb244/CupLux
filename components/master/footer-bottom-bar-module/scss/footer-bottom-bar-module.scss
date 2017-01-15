@@ -1,34 +1,83 @@
-@import "../../../utils/global.scss";
+@import "../../../utils/scss/foundation/_settings.scss";
 
 [data-module-footer-bottom-bar-module]{
 
 	footer{
 		position: relative;
-		height: 60px;
-
-		@media #{$large-up}{
-			height: 80px;
+		
+		@media #{$small-only}{
+			display:flex;
+			align-items: center;
 		}
 
+		margin-top: 15px;
+
+		@media #{$medium-up}{
+			height: 60px;
+		}
+
+		@media #{$medium-only}{
+			margin-top: 30px;
+		}
+
+		@media #{$large-up}{
+			margin-top: 40px;
+		}
 
 		background-color: purple;
 
-		p{
+		.main-text{
 			text-align: center;
-			line-height: 60px;
 			margin: 0;
-			height: 100%;
+			color: white;
+			@media #{$medium-up}{
+				line-height: 60px;
+			}
+
+			@media #{$small-only}{
+				flex: 0 0 50%;
+				margin: 0;
+
+			}
+		}
+		a{
 			color: white;
 		}
 
 
 
 		.social{
-			position: absolute;
-			top: 0;
-			right: 10px;
-			line-height: 60px;
 			color: white;
+			display: flex;
+
+			@media #{$small-only}{
+				flex: 0 0 50%;
+				align-items: center;
+				justify-content: flex-end;
+				>div{
+					margin-right: 5px;
+				}
+			}
+
+			@media #{$medium-up}{
+				position: absolute;
+				top: 0;
+				right: 10px;
+				line-height: 60px;
+
+				>div{
+					margin-right: 10px;
+					@media #{$large-up}{
+						margin-right: 15px;
+					}
+				}
+			}
+			
+		
+			>div:not(.text){
+				display: flex;
+				align-items: center;
+			}
 		}
 	}
 

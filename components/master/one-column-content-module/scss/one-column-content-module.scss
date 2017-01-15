@@ -1,9 +1,21 @@
-
+@import "../../../utils/scss/foundation/_settings.scss";
 
 [data-module-one-column-content-module]{
 
-	margin-top: 30px;
-	font-size: 22px;
+	margin-top: 20px;
+	font-size: 28px;
+	font-weight: bold;
+	color: purple;
+
+	@media #{$medium-only}{
+		margin-top: 24px;
+		font-size: 30px;
+	}
+
+	@media #{$large-up}{
+		margin-top: 26px;
+		font-size: 36px;
+	}
 
 	
 	
