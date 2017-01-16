@@ -1,0 +1,21 @@
+@import "../../../utils/scss/foundation/_settings.scss";
+
+
+[data-module-one-column-image-module]{
+
+	.image-canopy-love{
+		background: url('/images/main/one-column-image-module/canopy.jpg') no-repeat center center;
+		background-size: contain;
+		height: 250px;
+	}
+
+	.image-canopy-love2{
+		background: url('/images/main/one-column-image-module/light-bulb-1.jpg') no-repeat center center;
+		background-size: contain;
+		height: 350px;
+	}
+
+
+	
+	
+}

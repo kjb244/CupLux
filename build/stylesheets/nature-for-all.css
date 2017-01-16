@@ -48,6 +48,15 @@ h1, h2, h3, h4, h5, h6, nav * {
 
 [data-module-engagement-module] nav .top-bar-section li a:hover {
   color: green !important; }
+ [data-module-one-column-image-module] .image-canopy-love {
+  background: url("/images/main/one-column-image-module/canopy.jpg") no-repeat center center;
+  background-size: contain;
+  height: 250px; }
+
+[data-module-one-column-image-module] .image-canopy-love2 {
+  background: url("/images/main/one-column-image-module/light-bulb-1.jpg") no-repeat center center;
+  background-size: contain;
+  height: 350px; }
  [data-module-one-column-content-module] h3 {
   font-size: 28px;
   font-weight: bold;
@@ -71,41 +80,6 @@ h1, h2, h3, h4, h5, h6, nav * {
       [data-module-one-column-content-module] h3.first {
         margin-top: 26px;
         font-size: 36px; } }
- [data-module-image-interchange-module] {
-  margin-top: 30px;
-  font-size: 22px; }
-  [data-module-image-interchange-module] img {
-    width: 100%;
-    height: 250px; }
-    @media only screen and (min-width: 64.0625em) {
-      [data-module-image-interchange-module] img {
-        height: 400px; } }
-    @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-      [data-module-image-interchange-module] img {
-        height: 300px; } }
- [data-module-two-column-content-module] {
-  margin-top: 15px; }
-  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-    [data-module-two-column-content-module] {
-      margin-top: 20px; } }
-  @media only screen and (min-width: 64.0625em) {
-    [data-module-two-column-content-module] {
-      margin-top: 25px; } }
-  [data-module-two-column-content-module] .content-left, [data-module-two-column-content-module] .content-right {
-    height: 200px;
-    background-color: gray; }
-    @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-      [data-module-two-column-content-module] .content-left, [data-module-two-column-content-module] .content-right {
-        height: 250px; } }
-    @media only screen and (min-width: 64.0625em) {
-      [data-module-two-column-content-module] .content-left, [data-module-two-column-content-module] .content-right {
-        height: 300px; } }
-  @media only screen and (max-width: 40em) {
-    [data-module-two-column-content-module] .content-right {
-      margin-top: 10px; } }
-  @media only screen and (min-width: 40.0625em) {
-    [data-module-two-column-content-module] .medium-6.columns {
-      width: 49%; } }
  [data-module-footer-bottom-bar-module] footer {
   position: relative;
   margin-top: 15px;

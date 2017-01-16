@@ -1,6 +1,6 @@
 {
-  "url": "main",
-  "title": "testing title",
+  "url": "nature-for-all",
+  "title": "Cup Lux - Nature For All",
   "modules": [
     {
       "type": "header",
@@ -19,17 +19,13 @@
       "type": "body",
       "modules": [
         {
+          "name": "/master/one-column-image-module",
+          "copy": "one-column-image-module.json"
+        },
+        {
           "name": "/master/one-column-content-module",
-          "copy": "main-one-column-content-module.json",
-          "class": "data-module-main-one-column-content"
-        },
-        {
-          "name": "/master/image-interchange-module",
-          "copy": "image-interchange-module.json"
-        },
-        {
-          "name": "/master/two-column-content-module",
-          "copy": "two-column-content-module.json"
+          "copy": "nature-for-all-one-column-content-module.json",
+          "class": "data-module-nature-for-one"
         }
       ]
     },

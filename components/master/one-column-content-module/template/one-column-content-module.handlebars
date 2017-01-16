@@ -1,11 +1,19 @@
-{{#with content}}
+{{#if content}}
+	{{#each this.content}}
+		<div class="row">
+			<div class="small-12 medium-12 medium-centered text-center columns">
+				<h3 class="{{#unless @index}}first{{/unless}}">{{{this.header}}}</h3>
 
-	<div class="row">
-		<div class="medium-12 medium-centered text-center columns">
-			{{{this.header}}}
+				{{#each this.paras}}
+					<div class="row">
+						<div class="small-12 medium-10 medium-centered columns paras">
+							<p>{{{this}}}<p>
+
+						</div>	
+					</div>
+				{{/each}}
+			</div>
+
 		</div>
-
-	</div>
-
-
-{{/with}}
+	{{/each}}
+{{/if}}

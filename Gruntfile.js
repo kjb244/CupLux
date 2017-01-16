@@ -82,7 +82,7 @@ module.exports = function(grunt) {
 				
 					//loop through the module types: header, body, and footer
 					moduleRec.modules.forEach(function(moduleRecInner){
-
+						let clazz= moduleRecInner.class ? ' class="' + moduleRecInner.class + '"' : '';
 						//get root directory
 						//first put into array ex: master, body-module
 						let rootPathModule = moduleRecInner.name.replace(/^\/{1}/,'').split('/');
@@ -126,7 +126,7 @@ module.exports = function(grunt) {
 
 							let template = handlebars.compile(hbsFile);
 							let html = template(copyJson);
-							let wrapper = "<div data-module-" + module + ">" + html + "</div>";
+							let wrapper = "<div data-module-" + module + clazz +  ">" + html + "</div>";
 
 							moduleObj['html' + type] = (moduleObj['html' + type]  || '') + wrapper;
 

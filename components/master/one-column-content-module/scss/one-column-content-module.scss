@@ -2,20 +2,44 @@
 
 [data-module-one-column-content-module]{
 
-	margin-top: 20px;
-	font-size: 28px;
-	font-weight: bold;
-	color: purple;
+	h3{
+		
+		font-size: 28px;
+		font-weight: bold;
+		color: purple;
+		line-height: 30px;
 
-	@media #{$medium-only}{
-		margin-top: 24px;
-		font-size: 30px;
+		@media #{$medium-only}{
+				font-size: 30px;
+				line-height: 32px;
+			}
+
+		@media #{$large-up}{
+			font-size: 36px;
+			line-height: 38px;
+		}
+
+		&.first{
+			margin-top: 20px;
+			@media #{$medium-only}{
+				margin-top: 24px;
+				font-size: 30px;
+			}
+
+			@media #{$large-up}{
+				margin-top: 26px;
+				font-size: 36px;
+			}
+		}
+
 	}
 
-	@media #{$large-up}{
-		margin-top: 26px;
-		font-size: 36px;
+	&.data-module-nature-for-one{
+
 	}
+
+
+
 
 	
 	
