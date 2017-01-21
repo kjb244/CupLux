@@ -147,31 +147,6 @@ h1, h2, h3, h4, h5, h6, nav * {
 
 [data-module-one-column-content-module].data-module-rewards-faq {
   display: none; }
- [data-module-flex-div-module] {
-  margin-top: 15px; }
-  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-    [data-module-flex-div-module] {
-      margin-top: 20px; } }
-  @media only screen and (min-width: 64.0625em) {
-    [data-module-flex-div-module] {
-      margin-top: 25px; } }
-  [data-module-flex-div-module] .master {
-    display: flex; }
-    @media only screen and (max-width: 40em) {
-      [data-module-flex-div-module] .master {
-        flex-direction: column; } }
-    [data-module-flex-div-module] .master > div {
-      height: 200px;
-      background-color: gray;
-      justify-content: center;
-      margin-left: 1%; }
-      @media only screen and (min-width: 40.0625em) {
-        [data-module-flex-div-module] .master > div {
-          flex: 0 0 24%; } }
-      @media only screen and (max-width: 40em) {
-        [data-module-flex-div-module] .master > div {
-          margin-top: 1%;
-          margin-left: 0; } }
  [data-module-footer-bottom-bar-module] footer {
   position: relative;
   margin-top: 15px;

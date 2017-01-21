@@ -2,7 +2,18 @@
 	{{#each this.content}}
 		<div class="row">
 			<div class="small-12 medium-12 medium-centered text-center columns">
-				<h3 class="{{#unless @index}}first{{/unless}}">{{{this.header}}}</h3>
+				{{#if this.header}}
+					<h3 class="{{#unless @index}}first{{/unless}}">{{{this.header}}}</h3>
+				{{/if}}
+
+				{{#if this.link}}
+					<p class="link">
+						{{{this.link.link}}}
+						{{#if this.link.arrow}}
+							{{{this.link.arrow}}}
+						{{/if}}
+					</p>
+				{{/if}}
 
 				{{#each this.paras}}
 					<div class="row">

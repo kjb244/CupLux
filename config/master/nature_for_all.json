@@ -20,7 +20,8 @@
       "modules": [
         {
           "name": "/master/one-column-image-module",
-          "copy": "one-column-image-module.json"
+          "copy": "nature-for-all-one-column-image-module.json",
+          "class": "data-module-nature-for-one"
         },
         {
           "name": "/master/one-column-content-module",

@@ -34,22 +34,54 @@
 
 	}
 
-	h3 + .row >.paras:first-child{
-		margin-top: 2px;
+
+
+	&.data-module-nature-for-one{
+
+		h3 + .row >.paras:first-child{
+			margin-top: 2px;
+
+			@media #{$medium-only}{
+
+				margin-top: 10px;
+			}
+
+			@media #{$large-up}{
+
+				margin-top: 15px;
+			}
+		}
+
+
+	}
+
+	&.data-module-rewards-faq-link{
+		margin-top: 15px;
 
 		@media #{$medium-only}{
 
-			margin-top: 10px;
+			margin-top: 20px;
 		}
 
 		@media #{$large-up}{
 
-			margin-top: 15px;
+			margin-top: 25px;
 		}
+
+		img{
+			height: 20px;
+			width: 20px;
+			transition: transform .5s linear;
+			&.rotateUp{
+				transform: rotate(-90deg);
+			}
+		}
+
 	}
 
-	&.data-module-nature-for-one{
 
+	&.data-module-rewards-faq{
+		display: none;
 
 	}
 

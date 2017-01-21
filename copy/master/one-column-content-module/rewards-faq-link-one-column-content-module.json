@@ -1,0 +1,24 @@
+{
+  "content": [
+    {
+      "link": {
+        "link": "{LINK||dropDownFAQ}",
+        "arrow": "{IMAGE||imageArrow}"
+      }
+    }
+  ],
+  "LINKS": {
+    "dropDownFAQ": {
+      "href": "javascript:void(0)",
+      "id": "faq-link",
+      "content": "Click Drop Down FAQ Test"
+    }
+  },
+  "IMAGE": {
+    "imageArrow": {
+      "type": "image",
+      "src": "images/main/one-column-content-module/arrow.png",
+      "class": ""
+    }
+  }
+}

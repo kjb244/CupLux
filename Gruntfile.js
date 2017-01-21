@@ -137,14 +137,22 @@ module.exports = function(grunt) {
 											file: path.join(componentsPath, rootPathModule, module, "scss", module + ".scss")
 											});
 								css = new Buffer(css.css, 'utf8'); 
-								moduleObj['css'] = (moduleObj['css'] || '') + ' ' + css;
+								//only add if it's not there
+								if (!(moduleObj['css'] || '').includes(css)){
+									moduleObj['css'] = (moduleObj['css'] || '') + ' ' + css;
+								}
+								
 							}
 
 							//do js
 							if (existsDir(path.join(componentsPath, rootPathModule,  module, "javascript", module + ".js"))) {
 								let jsPath = path.join(componentsPath, rootPathModule,  module, "javascript", module + ".js");
 								let js = fs.readFileSync(jsPath).toString();
-								moduleObj['js'] = (moduleObj['js'] || '') + ' ' + js;
+								//only add if it's not there
+								if (!(moduleObj['js'] || '').includes(js)){
+									moduleObj['js'] = (moduleObj['js'] || '') + ' ' + js;
+								}
+								
 							}
 
 						}

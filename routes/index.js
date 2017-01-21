@@ -18,5 +18,9 @@ router.get('/nature-for-all', function(req, res){
 	res.sendFile(buildDirectory + 'nature-for-all.html');
 });
 
+router.get('/rewards', function(req, res){
+	res.sendFile(buildDirectory + 'rewards.html');
+});
+
 module.exports = router;
 

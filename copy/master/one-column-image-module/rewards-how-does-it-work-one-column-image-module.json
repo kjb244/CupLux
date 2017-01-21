@@ -1,0 +1,15 @@
+{
+  "content": {
+    "images": [
+      {
+        "img": "{IMAGE||imageHowDoesItWork}"
+      }
+    ]
+  },
+  "IMAGE": {
+    "imageHowDoesItWork": {
+      "src": "images/main/one-column-image-module/light-bulb-1.jpg",
+      "class": "image-how-does-it-work"
+    }
+  }
+}

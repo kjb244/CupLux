@@ -3,32 +3,79 @@
 
 [data-module-one-column-image-module]{
 
-	.image-canopy-love{
-		background: url('/images/main/one-column-image-module/canopy.jpg') no-repeat center center;
-		background-size: contain;
-		height: 180px;
-		@media #{$medium-only}{
-			height:200px
+	&.data-module-nature-for-one{
+		.image-canopy-love{
+			background: url('/images/main/one-column-image-module/canopy.jpg') no-repeat center center;
+			background-size: contain;
+			height: 180px;
+			@media #{$medium-only}{
+				height:200px
+			}
+			@media #{$large-up}{
+				height: 210px;
+			}
+
 		}
-		@media #{$large-up}{
-			height: 210px;
+
+		.image-canopy-love2{
+			background: url('/images/main/one-column-image-module/light-bulb-1.jpg') no-repeat center center;
+			background-size: contain;
+			height: 200px;
+			@media #{$medium-only}{
+				height: 250px
+			}
+			@media #{$large-up}{
+				height: 300px;
+			}
+
+
 		}
 
 	}
 
-	.image-canopy-love2{
-		background: url('/images/main/one-column-image-module/light-bulb-1.jpg') no-repeat center center;
-		background-size: contain;
-		height: 200px;
-		@media #{$medium-only}{
-			height: 250px
-		}
-		@media #{$large-up}{
-			height: 300px;
+	&.data-module-rewards-bloc-card{
+
+		.image-bloc-card{
+			background: url('/images/main/one-column-image-module/bloc_card.jpg') no-repeat center center;
+			background-size: contain;
+			height: 200px;
+			@media #{$medium-only}{
+				height: 220px
+			}
+			@media #{$large-up}{
+				height: 250px;
+			}
+
+
 		}
 
 
 	}
+
+
+	&.data-module-rewards-how-does-it-work{
+
+		.image-how-does-it-work{
+			background: url('/images/main/one-column-image-module/light-bulb-1.jpg') no-repeat center center;
+			background-size: contain;
+			height: 200px;
+			@media #{$medium-only}{
+				height: 250px
+			}
+			@media #{$large-up}{
+				height: 300px;
+			}
+
+
+
+		}
+
+
+	}
+
+	
+
+
 
 
 	
