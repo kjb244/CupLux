@@ -34,7 +34,22 @@
 
 	}
 
+	h3 + .row >.paras:first-child{
+		margin-top: 2px;
+
+		@media #{$medium-only}{
+
+			margin-top: 10px;
+		}
+
+		@media #{$large-up}{
+
+			margin-top: 15px;
+		}
+	}
+
 	&.data-module-nature-for-one{
+
 
 	}
 

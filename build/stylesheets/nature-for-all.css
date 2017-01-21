@@ -57,12 +57,24 @@ h1, h2, h3, h4, h5, h6, nav * {
  [data-module-one-column-image-module] .image-canopy-love {
   background: url("/images/main/one-column-image-module/canopy.jpg") no-repeat center center;
   background-size: contain;
-  height: 250px; }
+  height: 180px; }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    [data-module-one-column-image-module] .image-canopy-love {
+      height: 200px; } }
+  @media only screen and (min-width: 64.0625em) {
+    [data-module-one-column-image-module] .image-canopy-love {
+      height: 210px; } }
 
 [data-module-one-column-image-module] .image-canopy-love2 {
   background: url("/images/main/one-column-image-module/light-bulb-1.jpg") no-repeat center center;
   background-size: contain;
-  height: 350px; }
+  height: 200px; }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    [data-module-one-column-image-module] .image-canopy-love2 {
+      height: 250px; } }
+  @media only screen and (min-width: 64.0625em) {
+    [data-module-one-column-image-module] .image-canopy-love2 {
+      height: 300px; } }
  [data-module-one-column-content-module] h3 {
   font-size: 28px;
   font-weight: bold;
@@ -86,23 +98,40 @@ h1, h2, h3, h4, h5, h6, nav * {
       [data-module-one-column-content-module] h3.first {
         margin-top: 26px;
         font-size: 36px; } }
- [data-module-flex-div-module] .master {
-  display: flex; }
-  @media only screen and (max-width: 40em) {
-    [data-module-flex-div-module] .master {
-      flex-direction: column; } }
-  [data-module-flex-div-module] .master > div {
-    height: 200px;
-    background-color: gray;
-    justify-content: center;
-    margin-left: 1%; }
-    @media only screen and (min-width: 40.0625em) {
-      [data-module-flex-div-module] .master > div {
-        flex: 0 0 24%; } }
+
+[data-module-one-column-content-module] h3 + .row > .paras:first-child {
+  margin-top: 2px; }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    [data-module-one-column-content-module] h3 + .row > .paras:first-child {
+      margin-top: 10px; } }
+  @media only screen and (min-width: 64.0625em) {
+    [data-module-one-column-content-module] h3 + .row > .paras:first-child {
+      margin-top: 15px; } }
+ [data-module-flex-div-module] {
+  margin-top: 15px; }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    [data-module-flex-div-module] {
+      margin-top: 20px; } }
+  @media only screen and (min-width: 64.0625em) {
+    [data-module-flex-div-module] {
+      margin-top: 25px; } }
+  [data-module-flex-div-module] .master {
+    display: flex; }
     @media only screen and (max-width: 40em) {
-      [data-module-flex-div-module] .master > div {
-        margin-top: 1%;
-        margin-left: 0; } }
+      [data-module-flex-div-module] .master {
+        flex-direction: column; } }
+    [data-module-flex-div-module] .master > div {
+      height: 200px;
+      background-color: gray;
+      justify-content: center;
+      margin-left: 1%; }
+      @media only screen and (min-width: 40.0625em) {
+        [data-module-flex-div-module] .master > div {
+          flex: 0 0 24%; } }
+      @media only screen and (max-width: 40em) {
+        [data-module-flex-div-module] .master > div {
+          margin-top: 1%;
+          margin-left: 0; } }
  [data-module-footer-bottom-bar-module] footer {
   position: relative;
   margin-top: 15px;

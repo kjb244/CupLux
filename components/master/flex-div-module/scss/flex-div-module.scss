@@ -1,6 +1,19 @@
 @import "../../../utils/scss/foundation/_settings.scss";
 
 [data-module-flex-div-module]{
+
+	margin-top: 15px;
+
+	@media #{$medium-only}{
+
+		margin-top: 20px;
+	}
+
+	@media #{$large-up}{
+
+		margin-top: 25px;
+	}
+	
 	.master{
 		display: flex;
 		@media #{$small-only}{
