@@ -1,0 +1,32 @@
+@import "../../../utils/scss/foundation/_settings.scss";
+
+[data-module-flex-div-module]{
+	.master{
+		display: flex;
+		@media #{$small-only}{
+			flex-direction: column
+		}
+
+		>div{
+			@media #{$medium-up}{
+				flex: 0 0 24%;
+			}
+			
+			height: 200px;
+			background-color: gray;
+			justify-content: center;
+			margin-left: 1%;
+			@media #{$small-only}{
+				margin-top: 1%;
+				margin-left: 0;
+			}
+
+		}
+		>div:nth-child(n+2){
+	
+		}
+	}
+
+	
+	
+}

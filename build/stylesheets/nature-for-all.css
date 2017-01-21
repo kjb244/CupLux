@@ -10,6 +10,12 @@ h1, h2, h3, h4, h5, h6, nav * {
 .row .row {
   margin-left: 0;
   margin-right: 0; }
+
+.purple {
+  color: #5B2B82; }
+
+.strong {
+  font-weight: bold; }
  [data-module-engagement-module] .background-image-header-main {
   height: 264px;
   width: 300px;
@@ -31,12 +37,12 @@ h1, h2, h3, h4, h5, h6, nav * {
     justify-content: space-between;
     width: 100%;
     background-color: white;
-    border-top: 2px solid purple;
-    border-bottom: 2px solid purple; } }
+    border-top: 2px solid #5B2B82;
+    border-bottom: 2px solid #5B2B82; } }
 
 [data-module-engagement-module] nav .top-bar-section li a {
   background: white !important;
-  color: purple;
+  color: #5B2B82;
   font-size: 14px;
   font-weight: bold; }
   @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
@@ -60,7 +66,7 @@ h1, h2, h3, h4, h5, h6, nav * {
  [data-module-one-column-content-module] h3 {
   font-size: 28px;
   font-weight: bold;
-  color: purple;
+  color: #5B2B82;
   line-height: 30px; }
   @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
     [data-module-one-column-content-module] h3 {
@@ -80,10 +86,27 @@ h1, h2, h3, h4, h5, h6, nav * {
       [data-module-one-column-content-module] h3.first {
         margin-top: 26px;
         font-size: 36px; } }
+ [data-module-flex-div-module] .master {
+  display: flex; }
+  @media only screen and (max-width: 40em) {
+    [data-module-flex-div-module] .master {
+      flex-direction: column; } }
+  [data-module-flex-div-module] .master > div {
+    height: 200px;
+    background-color: gray;
+    justify-content: center;
+    margin-left: 1%; }
+    @media only screen and (min-width: 40.0625em) {
+      [data-module-flex-div-module] .master > div {
+        flex: 0 0 24%; } }
+    @media only screen and (max-width: 40em) {
+      [data-module-flex-div-module] .master > div {
+        margin-top: 1%;
+        margin-left: 0; } }
  [data-module-footer-bottom-bar-module] footer {
   position: relative;
   margin-top: 15px;
-  background-color: purple; }
+  background-color: #5B2B82; }
   @media only screen and (max-width: 40em) {
     [data-module-footer-bottom-bar-module] footer {
       display: flex;

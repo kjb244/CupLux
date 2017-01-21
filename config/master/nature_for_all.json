@@ -26,6 +26,10 @@
           "name": "/master/one-column-content-module",
           "copy": "nature-for-all-one-column-content-module.json",
           "class": "data-module-nature-for-one"
+        },
+        {
+          "name": "/master/flex-div-module",
+          "copy": "flex-div-module.json"
         }
       ]
     },

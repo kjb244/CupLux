@@ -1,3 +1,5 @@
+@import "../../../utils/scss/foundation/_settings.scss";
+
 p, div, span{
 	font-family: 'camptonlight' !important;
 }
@@ -13,4 +15,12 @@ h1, h2, h3, h4, h5, h6, nav *{
 .row .row{
 	margin-left: 0;
 	margin-right: 0;
+}
+
+.purple{
+	color: $purple;
+}
+
+.strong{
+	font-weight: bold;
 }
