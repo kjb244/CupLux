@@ -5,7 +5,7 @@ var main = function(){
 
 	voidMain = function(){
 		var $faqLink = settings.$target.find('#faq-link');
-		$faqLink.on('click', function(){
+		$faqLink.on('click touchstart', function(){
 			$(this).toggleClass('shown').next('img').toggleClass('rotateUp');
 			var $faqHidden = $(".data-module-rewards-faq");
 			$faqHidden.slideToggle(500, function(){
