@@ -1,12 +1,11 @@
 var main = function(){
 	var settings = {};
-	settings.$target = $("[data-module-one-column-content-module");
+	settings.$target = $("[data-module-one-column-content-module].data-module-rewards-faq-link");
 
 
 	voidMain = function(){
 		var $faqLink = settings.$target.find('#faq-link');
 		$faqLink.on('click', function(){
-			alert('here');
 			$(this).toggleClass('shown').next('img').toggleClass('rotateUp');
 			var $faqHidden = $(".data-module-rewards-faq");
 			$faqHidden.slideToggle(500, function(){
