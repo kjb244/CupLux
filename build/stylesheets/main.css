@@ -14,8 +14,38 @@ h1, h2, h3, h4, h5, h6, nav * {
 .purple {
   color: #5B2B82; }
 
-.strong {
+.strong, .bold {
   font-weight: bold; }
+
+[data-module-header] nav a {
+  font-size: 16px !important; }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    [data-module-header] nav a {
+      font-size: 17px !important; } }
+  @media only screen and (min-width: 64.0625em) {
+    [data-module-header] nav a {
+      font-size: 18px !important; } }
+
+[data-module-body] p, [data-module-body] a {
+  font-size: 13px; }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    [data-module-body] p, [data-module-body] a {
+      font-size: 14px; } }
+  @media only screen and (min-width: 64.0625em) {
+    [data-module-body] p, [data-module-body] a {
+      font-size: 15px; } }
+
+[data-module-body] h3 {
+  font-size: 28px;
+  line-height: 30px; }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    [data-module-body] h3 {
+      font-size: 30px;
+      line-height: 32px; } }
+  @media only screen and (min-width: 64.0625em) {
+    [data-module-body] h3 {
+      font-size: 36px;
+      line-height: 38px; } }
  [data-module-engagement-module] .background-image-header-main {
   height: 264px;
   width: 300px;
@@ -43,40 +73,21 @@ h1, h2, h3, h4, h5, h6, nav * {
 [data-module-engagement-module] nav .top-bar-section li a {
   background: white !important;
   color: #5B2B82;
-  font-size: 14px;
   font-weight: bold; }
-  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-    [data-module-engagement-module] nav .top-bar-section li a {
-      font-size: 16px; } }
-  @media only screen and (min-width: 64.0625em) {
-    [data-module-engagement-module] nav .top-bar-section li a {
-      font-size: 18px; } }
 
 [data-module-engagement-module] nav .top-bar-section li a:hover {
   color: green !important; }
  [data-module-one-column-content-module] h3 {
-  font-size: 28px;
   font-weight: bold;
-  color: #5B2B82;
-  line-height: 30px; }
-  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-    [data-module-one-column-content-module] h3 {
-      font-size: 30px;
-      line-height: 32px; } }
-  @media only screen and (min-width: 64.0625em) {
-    [data-module-one-column-content-module] h3 {
-      font-size: 36px;
-      line-height: 38px; } }
+  color: #5B2B82; }
   [data-module-one-column-content-module] h3.first {
     margin-top: 20px; }
     @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
       [data-module-one-column-content-module] h3.first {
-        margin-top: 24px;
-        font-size: 30px; } }
+        margin-top: 24px; } }
     @media only screen and (min-width: 64.0625em) {
       [data-module-one-column-content-module] h3.first {
-        margin-top: 26px;
-        font-size: 36px; } }
+        margin-top: 26px; } }
 
 [data-module-one-column-content-module].data-module-nature-for-one h3 + .row > .paras:first-child {
   margin-top: 2px; }

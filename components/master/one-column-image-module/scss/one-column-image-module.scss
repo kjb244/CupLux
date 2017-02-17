@@ -37,13 +37,13 @@
 
 		.image-bloc-card{
 			background: url('/images/main/one-column-image-module/bloc_card.jpg') no-repeat center center;
-			background-size: contain;
+			background-size: 270px 270px;
 			height: 200px;
 			@media #{$medium-only}{
-				height: 220px
+				background-size: 320px 320px;
 			}
 			@media #{$large-up}{
-				height: 250px;
+				background-size: 340px 340px;
 			}
 
 

@@ -21,6 +21,50 @@ h1, h2, h3, h4, h5, h6, nav *{
 	color: $purple;
 }
 
-.strong{
+.strong, .bold{
 	font-weight: bold;
+}
+
+[data-module-header]{
+	nav a{
+		font-size: 16px !important;
+		@media #{$medium-only}{
+			font-size: 17px !important;
+		}
+		@media #{$large-up}{
+			font-size: 18px !important;
+		}
+	}
+}
+
+[data-module-body]{
+
+	p, a{
+		font-size: 13px;
+		@media #{$medium-only}{
+			font-size: 14px;
+		}
+		@media #{$large-up}{
+			font-size: 15px;
+		}
+
+	}
+
+	h3{
+		
+		font-size: 28px;
+		line-height: 30px;
+
+		@media #{$medium-only}{
+				font-size: 30px;
+				line-height: 32px;
+			}
+
+		@media #{$large-up}{
+			font-size: 36px;
+			line-height: 38px;
+		}
+	}
+
+
 }

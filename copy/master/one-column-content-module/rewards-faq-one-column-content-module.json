@@ -1,21 +1,39 @@
 {
   "content": [
     {
-      "header": "How do I join?",
+      "header": "What is it?",
       "paras": [
-        "Our loyalty card, the CupLux Bloc Card, is built for customers that love our coffee and want to support our community philosophy. It’s a very simple program: You get 10% back on all purchases of food or drink at CupLux to use on a future visit to our shop. To obtain the card there is a $5.00 annual membership fee which goes to funding urban conservation efforts in and around the community that surrounds our shop. The best part is, use the balance whenever you darn well please!a combination of people, parties, or groups sharing a common purpose./bläk/ (block) You can sign-up online ahead of time and pick-up your card at the store, or you can just sign-up next time you stop by."
+        "The CupLux Bloc card is our version of a loyalty program.  With it you are showing your support for our #CanopyLove campaign and as a reward you get 10% back on all purchases at CupLux to put towards future visits."
       ]
     },
     {
-      "header": "How does it compare?",
+      "header": "How does this compare to other rewards programs?",
       "paras": [
-        "Most rewards program usually require 10 drink purchases before you get one on the house.  Starbucks now requires you to spend over $60 before you qualify for free drink or food.  With our program, you get 10% back on all purchases to put towards food or drink at CupLux - whenever you darn well please."
+        "Most rewards program usually require 10 drink purchases before you get one on the house.  Starbucks now requires you to spend over $60 before you qualify for free drink or food.  With our program, you get 10% back on all purchases to put towards food or drink purchases at CupLux during future visits. "
       ]
     },
     {
-      "header": "Are there any exclusions?",
+      "header": "How Do I Join?",
       "paras": [
-        "The only thing you cannot use your CupLux Bloc Balance on is the purchase of gift cards or the replacement cost of a new card. Your balance cannot be transferred to another account. The balance expires 36 months after the purchase date. Members are only allowed one card per person. In the event you lose your card, you can have it replaced at the store for the cost of the card. Account balances are kept on record in the event you forget your card. The 10% generated from a Bloc Card can only be put back on the same card."
+        "You can sign-up online ahead of time and pick-up your card at the store, or you can just sign-up next time you stop by."
+      ]
+    },
+    {
+      "header": "How does it work?",
+      "paras": [
+        "Simple. You get 10% back on everything you buy at CupLux.  The running balance from those purchases is kept on your card, and you can use it whenver you want, for food or drink at CupLux.  Easy Peasy."
+      ]
+    },
+    {
+      "header": "Member Fee",
+      "paras": [
+        "There is an annual $5.00 membership fee to join the Bloc.  The fee from this membership is used support efforts around our community philosophy of Nature for All."
+      ]
+    },
+    {
+      "header": "Exclusions",
+      "paras": [
+        "The only thing you cannot use your CupLux Bloc Balance on is the purchase of gift cards or the replacement cost of a new card.  Your balance cannot be transferred to another account.  The balance expires 36 months after the purchase date.  Members are only allowed one card per person.  In the event you lose your card, you can have it replaced at the store for the cost of the card.  Account balances are kept on record in the event you forget your card.   The 10% generated from a Bloc Card can only be put back on the same card."
       ]
     }
   ]
