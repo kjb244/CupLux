@@ -18,13 +18,13 @@ h1, h2, h3, h4, h5, h6, nav * {
   font-weight: bold; }
 
 [data-module-header] nav a {
-  font-size: 16px !important; }
+  font-size: 14px !important; }
   @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
     [data-module-header] nav a {
-      font-size: 17px !important; } }
+      font-size: 15px !important; } }
   @media only screen and (min-width: 64.0625em) {
     [data-module-header] nav a {
-      font-size: 18px !important; } }
+      font-size: 16px !important; } }
 
 [data-module-body] p, [data-module-body] a {
   font-size: 13px; }
@@ -36,16 +36,16 @@ h1, h2, h3, h4, h5, h6, nav * {
       font-size: 15px; } }
 
 [data-module-body] h3 {
-  font-size: 28px;
-  line-height: 30px; }
+  font-size: 20px;
+  line-height: 20px; }
   @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
     [data-module-body] h3 {
-      font-size: 30px;
-      line-height: 32px; } }
+      font-size: 22px;
+      line-height: 22px; } }
   @media only screen and (min-width: 64.0625em) {
     [data-module-body] h3 {
-      font-size: 36px;
-      line-height: 38px; } }
+      font-size: 24px;
+      line-height: 24px; } }
  [data-module-engagement-module] .background-image-header-main {
   height: 264px;
   width: 300px;
