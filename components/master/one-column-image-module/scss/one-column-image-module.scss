@@ -73,6 +73,25 @@
 
 	}
 
+	&.data-module-about{
+
+		.image-bloc-card{
+			background: url('/images/main/one-column-image-module/bloc_card.jpg') no-repeat center center;
+			background-size: 270px 270px;
+			height: 200px;
+			@media #{$medium-only}{
+				background-size: 320px 320px;
+			}
+			@media #{$large-up}{
+				background-size: 340px 340px;
+			}
+
+
+		}
+
+
+	}
+
 	
 
 

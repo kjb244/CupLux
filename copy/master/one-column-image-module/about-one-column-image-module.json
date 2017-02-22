@@ -1,0 +1,15 @@
+{
+    "content": {
+        "images": [
+            {
+                "img": "{IMAGE||imageBlocCard}"
+            }
+        ]
+    },
+    "IMAGE": {
+        "imageBlocCard": {
+            "src": "images/main/one-column-image-module/bloc_card.jpg",
+            "class": "image-bloc-card"
+        }
+    }
+}

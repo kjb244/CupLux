@@ -1,0 +1,42 @@
+{
+  "url": "about",
+  "title": "CupLux - About",
+  "modules": [
+    {
+      "type": "header",
+      "modules": [
+        {
+          "name": "/global/common-module",
+          "copy": "common-module.json"
+        },
+        {
+          "name": "/master/engagement-module",
+          "copy": "engagement-module.json"
+        }
+      ]
+    },
+    {
+      "type": "body",
+      "modules": [
+        {
+          "name": "/master/one-column-image-module",
+          "copy": "about-one-column-image-module.json",
+          "class": "data-module-about"
+        },
+        {
+          "name": "/master/one-column-content-module",
+          "copy": "about-one-column-content-module.json"
+        }
+      ]
+    },
+    {
+      "type": "footer",
+      "modules": [
+        {
+          "name": "/master/footer-bottom-bar-module",
+          "copy": "footer-bottom-bar-module.json"
+        }
+      ]
+    }
+  ]
+}

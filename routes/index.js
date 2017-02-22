@@ -22,5 +22,9 @@ router.get('/rewards', function(req, res){
 	res.sendFile(buildDirectory + 'rewards.html');
 });
 
+router.get('/about', function(req, res){
+	res.sendFile(buildDirectory + 'about.html');
+});
+
 module.exports = router;
 
