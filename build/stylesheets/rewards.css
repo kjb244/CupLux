@@ -61,6 +61,13 @@ h1, h2, h3, h4, h5, h6, nav * {
       height: 340px;
       width: 340px; } }
 
+[data-module-engagement-module] .top-bar {
+  transition: height .5s linear; }
+
+[data-module-engagement-module] .top-bar.expanded {
+  transition: height .5s linear;
+  height: 285px; }
+
 @media only screen and (min-width: 40.0625em) {
   [data-module-engagement-module] nav .top-bar-section ul {
     display: flex;
@@ -68,15 +75,13 @@ h1, h2, h3, h4, h5, h6, nav * {
     width: 100%;
     background-color: white;
     border-top: 2px solid #5B2B82;
-    border-bottom: 2px solid #5B2B82; } }
-
-[data-module-engagement-module] nav .top-bar-section li a {
-  background: white !important;
-  color: #5B2B82;
-  font-weight: bold; }
-
-[data-module-engagement-module] nav .top-bar-section li a:hover {
-  color: green !important; }
+    border-bottom: 2px solid #5B2B82; }
+    [data-module-engagement-module] nav .top-bar-section ul li a {
+      background: white !important;
+      color: #5B2B82;
+      font-weight: bold; }
+    [data-module-engagement-module] nav .top-bar-section ul li a:hover {
+      color: green !important; } }
  [data-module-one-column-image-module].data-module-nature-for-one .image-canopy-love {
   background: url("/images/main/one-column-image-module/canopy.jpg") no-repeat center center;
   background-size: contain;

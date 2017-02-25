@@ -20,6 +20,15 @@
 		background-size: 100% 100%;
 	}
 
+	.top-bar{
+		transition: height .5s linear;
+	}
+
+	.top-bar.expanded{
+		transition: height .5s linear;
+		height: 285px;
+	}
+
 	nav .top-bar-section{
 		ul{
 			@media #{$medium-up}{
@@ -30,23 +39,20 @@
 				background-color: white;
 				border-top: 2px solid $purple;
 				border-bottom: 2px solid $purple;
+
+				li a{
+					background: white !important;
+					color: $purple;
+					font-weight: bold;
+	
+				}
+
+				li a:hover{
+					color: green !important;
+				}
 			}
 
 		}
-
-
-
-		li a{
-			background: white !important;
-			color: $purple;
-			font-weight: bold;
-	
-		}
-
-		li a:hover{
-			color: green !important;
-		}
 	}
-	
 	
 }
