@@ -1,10 +1,10 @@
 @import "../../../utils/scss/foundation/_settings.scss";
 
-p, div, span{
+p, div, span, h1, h2, h3, h4, h5, h6{
 	font-family: 'camptonlight' !important;
 }
 
-h1, h2, h3, h4, h5, h6, nav *{
+nav *{
 	font-family: 'camptonbold' !important;
 }
 
@@ -25,6 +25,22 @@ h1, h2, h3, h4, h5, h6, nav *{
 	font-weight: bold;
 }
 
+[data-module-body]{
+	>div{
+		margin-left: 10px;
+		margin-right: 10px;
+		@media #{$medium-only}{
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+		@media #{$large-up}{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+	}
+}
+
 [data-module-header]{
 	nav a{
 		font-size: 14px !important;
@@ -32,7 +48,7 @@ h1, h2, h3, h4, h5, h6, nav *{
 			font-size: 15px !important;
 		}
 		@media #{$large-up}{
-			font-size: 16px !important;
+			font-size: 19px !important;
 		}
 	}
 }

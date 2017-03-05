@@ -3,9 +3,11 @@
   {{#each content.images}}
     <li>
       {{{this.img}}}
-      <div class="orbit-caption">
-        Caption Test
-      </div>
+      {{#if this.img.caption}}
+	      <div class="orbit-caption">
+	        {{this.img.caption}}
+	      </div>
+      {{/if}}
     </li>
   {{/each}}  
 </ul>

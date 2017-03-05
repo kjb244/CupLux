@@ -3,25 +3,27 @@
     "dataOrbitOptions": "timer_speed:3000;",
     "images": [
       {
-        "img": "{IMAGE||imgageLightBulb}",
+        "img": "{IMAGE||imageStorefront}",
         "alt": ""
       },
       {
-        "img": "{IMAGE||imgageLightBulb2}",
+        "img": "{IMAGE||imageLocation}",
         "alt": ""
       }
     ]
   },
   "IMAGE": {
-    "imgageLightBulb": {
+    "imageStorefront": {
       "type": "image",
-      "src": "images/main/image-interchange-module/light-bulb-1.jpg",
-      "class": ""
+      "src": "images/main/image-interchange-module/storefront.jpg",
+      "class": "",
+      "caption": ""
     },
-    "imgageLightBulb2": {
+    "imageLocation": {
       "type": "image",
-      "src": "images/main/image-interchange-module/light-bulb-2.jpg",
-      "class": ""
+      "src": "images/main/image-interchange-module/location.jpg",
+      "class": "",
+      "caption": ""
     }
   }
 }
