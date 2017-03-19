@@ -2,21 +2,14 @@
   "content": {
     "images": [
       {
-        "img": "{IMAGE||imageCanopyLove}"
-      },
-      {
-        "img": "{IMAGE||imageCanopyLove2}"
+        "img": "{IMAGE||imageNatureForAll}"
       }
     ]
   },
   "IMAGE": {
-    "imageCanopyLove": {
-      "src": "images/main/one-column-image-module/canopy.jpg",
-      "class": "image-canopy-love"
-    },
-    "imageCanopyLove2": {
-      "src": "images/main/one-column-image-module/light-bulb-1.jpg",
-      "class": "image-canopy-love2"
+    "imageNatureForAll": {
+      "src": "images/main/one-column-image-module/nature-for-all.jpg",
+      "class": "image-nature-for-all"
     }
   }
 }

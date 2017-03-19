@@ -198,15 +198,15 @@ module.exports = function(grunt) {
 				//create head tag
 				let title = "<title>" + moduleObj['title'] + "</title>";
 				let foundationMetaTag = "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
-				let camptonBoldCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/campton_bold_macroman/stylesheet.css'>";
-				let camptonLightCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/campton_light_macroman/stylesheet.css'>";
-				let foundationCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/foundation.css'>";
+				let camptonBoldCss = "<link rel='stylesheet' type='text/css' href='stylesheets/campton_bold_macroman/stylesheet.css'>";
+				let camptonLightCss = "<link rel='stylesheet' type='text/css' href='stylesheets/campton_light_macroman/stylesheet.css'>";
+				let foundationCss = "<link rel='stylesheet' type='text/css' href='stylesheets/foundation.css'>";
 				let fontAwesomeCss = "<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>";
-				let moduleCombinedCss = "<link rel='stylesheet' type='text/css' href='/stylesheets/" + moduleObj['url'] + 
+				let moduleCombinedCss = "<link rel='stylesheet' type='text/css' href='stylesheets/" + moduleObj['url'] + 
 										".css'>";
-				let jqueryJS = "<script src='/javascripts/jquery.js'></script>";
-				let foundationJS = "<script src='/javascripts/foundation.min.js'></script>";
-				let jsDocumentReady2 = "<script src='/javascripts/" + moduleObj['url'] + ".js'></script>";
+				let jqueryJS = "<script src='javascripts/jquery.js'></script>";
+				let foundationJS = "<script src='javascripts/foundation.min.js'></script>";
+				let jsDocumentReady2 = "<script src='javascripts/" + moduleObj['url'] + ".js'></script>";
 				let head = "<head>" + title + foundationMetaTag +  camptonBoldCss + camptonLightCss + 
 				           foundationCss + fontAwesomeCss + moduleCombinedCss + jqueryJS + foundationJS + 
 				           jsDocumentReady2 +  "</head>";

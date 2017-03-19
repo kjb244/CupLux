@@ -4,32 +4,21 @@
 [data-module-one-column-image-module]{
 
 	&.data-module-nature-for-one{
-		.image-canopy-love{
-			background: url('/images/main/one-column-image-module/canopy.jpg') no-repeat center center;
+		.image-nature-for-all{
+			background: url('/images/main/one-column-image-module/nature-for-all.jpg') no-repeat center center;
 			background-size: contain;
-			height: 180px;
+			height: 280px;
 			@media #{$medium-only}{
-				height:200px
+				height:340px
 			}
 			@media #{$large-up}{
-				height: 210px;
+				height: 340px;
 			}
+
+			margin-bottom: -30px;
 
 		}
 
-		.image-canopy-love2{
-			background: url('/images/main/one-column-image-module/light-bulb-1.jpg') no-repeat center center;
-			background-size: contain;
-			height: 200px;
-			@media #{$medium-only}{
-				height: 250px
-			}
-			@media #{$large-up}{
-				height: 300px;
-			}
-
-
-		}
 
 	}
 
