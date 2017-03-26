@@ -1,0 +1,28 @@
+{
+  "content": {
+    "cellContent": [
+      "{IMAGE||imageEvent1}",
+      "{IMAGE||imageEvent2}",
+      "{IMAGE||imageEvent3}",
+      "{IMAGE||imageEvent4}"
+    ]
+  },
+  "IMAGE": {
+    "imageEvent1": {
+      "src": "images/main/flex-div-module/event-1.jpg",
+      "class": "image-event-1"
+    },
+    "imageEvent2": {
+      "src": "images/main/flex-div-module/event-2.jpg",
+      "class": "image-event-2"
+    },
+    "imageEvent3": {
+      "src": "images/main/flex-div-module/event-3.jpg",
+      "class": "image-event-3"
+    },
+    "imageEvent4": {
+      "src": "images/main/flex-div-module/event-4.jpg",
+      "class": "image-event-4"
+    }
+  }
+}

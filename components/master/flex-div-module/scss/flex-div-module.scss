@@ -31,13 +31,36 @@
 			margin-left: 1%;
 			@media #{$small-only}{
 				margin-top: 1%;
-				margin-left: 0;
+				margin-left: 10%;
+				margin-right: 10%;
 			}
 
 		}
-		>div:nth-child(n+2){
-	
+
+		[class^='image-event']{
+			background-size: cover !important;
+			@media #{$medium-up}{
+				background-size: 100% 100% !important;
+			}
+			height: 100%;
 		}
+
+		.image-event-1{
+			background: url('/images/main/flex-div-module/event-1.jpg') no-repeat;
+		}
+
+		.image-event-2{
+			background: url('/images/main/flex-div-module/event-2.jpg') no-repeat;
+		}
+
+		.image-event-3{
+			background: url('/images/main/flex-div-module/event-3.jpg') no-repeat;
+		}
+
+		.image-event-4{
+			background: url('/images/main/flex-div-module/event-4.jpg') no-repeat;
+		}
+
 	}
 
 	
