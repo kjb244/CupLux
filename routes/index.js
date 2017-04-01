@@ -26,5 +26,9 @@ router.get('/about', function(req, res){
 	res.sendFile(buildDirectory + 'about.html');
 });
 
+router.get('/location-hours', function(req, res){
+	res.sendFile(buildDirectory + 'location-hours.html');
+});
+
 module.exports = router;
 

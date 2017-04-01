@@ -4,7 +4,7 @@
       "img": "{IMAGE||imageBlocCard}"
     },
     "nav": [
-      "{LINK||menu}",
+      "{LINK||main}",
       "{LINK||locationAndHours}",
       "{LINK||rewards}",
       "{LINK||natureForAll}",
@@ -18,13 +18,13 @@
     }
   },
   "LINKS": {
-    "menu": {
-      "href": "#",
-      "id": "menu-link",
-      "content": "MENU"
+    "main": {
+      "href": "/main",
+      "id": "main",
+      "content": "HOME"
     },
     "locationAndHours": {
-      "href": "#",
+      "href": "/location-hours",
       "id": "location-and-hours-link",
       "content": "LOCATION AND HOURS"
     },

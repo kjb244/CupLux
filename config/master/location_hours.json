@@ -1,0 +1,43 @@
+{
+  "url": "location-hours",
+  "title": "CupLux - Location/Hours",
+  "modules": [
+    {
+      "type": "header",
+      "modules": [
+        {
+          "name": "/global/common-module",
+          "copy": "common-module.json"
+        },
+        {
+          "name": "/master/engagement-module",
+          "copy": "engagement-module.json"
+        }
+      ]
+    },
+    {
+      "type": "body",
+      "modules": [
+        {
+          "name": "/master/one-column-image-module",
+          "copy": "location-hours-one-column-image-module.json",
+          "class": "data-module-location-hours"
+        },
+        {
+          "name": "/master/one-column-content-module",
+          "copy": "location-hours-one-column-content-module.json",
+          "class": "data-module-location-hours"
+        }
+      ]
+    },
+    {
+      "type": "footer",
+      "modules": [
+        {
+          "name": "/master/footer-bottom-bar-module",
+          "copy": "footer-bottom-bar-module.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "content": [
+    {
+      "header": "3115 Freedom Drive, Charlotte, NC 28208",
+      "paras": [
+        "CupLux is close to xyz",
+        "",
+        "{LINK||getDirections}"
+      ]
+    }
+  ],
+  "LINKS": {
+    "getDirections": {
+      "href": "javascript:void(0)",
+      "id": "get-directions-link",
+      "content": "Get Directions to CupLux"
+    }
+  }
+}
