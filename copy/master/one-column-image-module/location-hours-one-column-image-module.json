@@ -1,1 +1,15 @@
-{}
+{
+    "content": {
+        "images": [
+            {
+                "img": "{IMAGE||imageBuilding}"
+            }
+        ]
+    },
+    "IMAGE": {
+        "imageBuilding": {
+            "src": "images/main/one-column-image-module/building.jpg",
+            "class": "image-building"
+        }
+    }
+}
