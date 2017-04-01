@@ -3,7 +3,7 @@
     "dataOrbitOptions": "timer_speed:3000;",
     "images": [
       {
-        "img": "{IMAGE||imageStorefront}",
+        "img": "{IMAGE||imageBuilding}",
         "alt": ""
       },
       {
@@ -13,9 +13,9 @@
     ]
   },
   "IMAGE": {
-    "imageStorefront": {
+    "imageBuilding": {
       "type": "image",
-      "src": "images/main/image-interchange-module/storefront.jpg",
+      "src": "images/main/image-interchange-module/building.jpg",
       "class": "",
       "caption": ""
     },
