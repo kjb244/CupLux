@@ -92,7 +92,9 @@ nav * {
       background: white !important;
       color: #5B2B82; }
     [data-module-engagement-module] nav .top-bar-section ul li a:hover {
-      color: green !important; } }
+      color: #854cb3 !important; }
+    [data-module-engagement-module] nav .top-bar-section ul .current {
+      text-decoration: underline; } }
  [data-module-one-column-content-module] h3 {
   color: #5B2B82; }
   [data-module-one-column-content-module] h3.first {

@@ -3,6 +3,7 @@
 
 [data-module-engagement-module]{
 
+
 	.background-image-header-main{
 		height: 280px;
 		width: 280px;
@@ -47,7 +48,11 @@
 				}
 
 				li a:hover{
-					color: green !important;
+					color: #854cb3 !important;
+				}
+
+				.current{
+					text-decoration: underline;
 				}
 			}
 
