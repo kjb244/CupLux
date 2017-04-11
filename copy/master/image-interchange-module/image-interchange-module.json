@@ -1,27 +1,117 @@
 {
   "content": {
     "dataOrbitOptions": "timer_speed:3000;",
-    "images": [
-      {
-        "img": "{IMAGE||imageBuilding}",
-        "alt": ""
-      },
-      {
-        "img": "{IMAGE||imageLocation}",
-        "alt": ""
-      }
-    ]
+    "images": {
+      "large": [
+        {
+          "img": "{IMAGE||imageBuildingLarge}",
+          "alt": ""
+        },
+        {
+          "img": "{IMAGE||imageMapLarge}",
+          "alt": ""
+        }
+      ],
+      "mediumHoriz": [
+        {
+          "img": "{IMAGE||imageBuildingMediumHoriz}",
+          "alt": ""
+        },
+        {
+          "img": "{IMAGE||imageMapMediumHoriz}",
+          "alt": ""
+        }
+      ],
+      "mediumVert": [
+        {
+          "img": "{IMAGE||imageBuildingMediumVert}",
+          "alt": ""
+        },
+        {
+          "img": "{IMAGE||imageMapMediumVert}",
+          "alt": ""
+        }
+      ],
+      "smallHoriz": [
+        {
+          "img": "{IMAGE||imageBuildingSmallHoriz}",
+          "alt": ""
+        },
+        {
+          "img": "{IMAGE||imageMapSmallHoriz}",
+          "alt": ""
+        }
+      ],
+      "smallVert": [
+        {
+          "img": "{IMAGE||imageBuildingSmallVert}",
+          "alt": ""
+        },
+        {
+          "img": "{IMAGE||imageMapSmallVert}",
+          "alt": ""
+        }
+      ]
+    }
   },
   "IMAGE": {
-    "imageBuilding": {
+    "imageBuildingLarge": {
       "type": "image",
-      "src": "images/main/image-interchange-module/building.jpg",
+      "src": "images/main/image-interchange-module/building_desktop.jpg",
       "class": "",
       "caption": ""
     },
-    "imageLocation": {
+    "imageMapLarge": {
       "type": "image",
-      "src": "images/main/image-interchange-module/location.jpg",
+      "src": "images/main/image-interchange-module/map_desktop.jpg",
+      "class": "",
+      "caption": ""
+    },
+    "imageBuildingMediumHoriz": {
+      "type": "image",
+      "src": "images/main/image-interchange-module/building_tablet_horiz.jpg",
+      "class": "",
+      "caption": ""
+    },
+    "imageMapMediumHoriz": {
+      "type": "image",
+      "src": "images/main/image-interchange-module/map_tablet_horiz.jpg",
+      "class": "",
+      "caption": ""
+    },
+    "imageBuildingMediumVert": {
+      "type": "image",
+      "src": "images/main/image-interchange-module/building_tablet_vertical.jpg",
+      "class": "",
+      "caption": ""
+    },
+    "imageMapMediumVert": {
+      "type": "image",
+      "src": "images/main/image-interchange-module/map_tablet_vertical.jpg",
+      "class": "",
+      "caption": ""
+    },
+    "imageBuildingSmallHoriz": {
+      "type": "image",
+      "src": "images/main/image-interchange-module/building_mobile_horiz.jpg",
+      "class": "",
+      "caption": ""
+    },
+    "imageMapSmallHoriz": {
+      "type": "image",
+      "src": "images/main/image-interchange-module/map_mobile_horiz.jpg",
+      "class": "",
+      "caption": ""
+    },
+    "imageBuildingSmallVert": {
+      "type": "image",
+      "src": "images/main/image-interchange-module/building_mobile_vertical.jpg",
+      "class": "",
+      "caption": ""
+    },
+    "imageMapSmallVert": {
+      "type": "image",
+      "src": "images/main/image-interchange-module/map_mobile_vertical.jpg",
       "class": "",
       "caption": ""
     }
