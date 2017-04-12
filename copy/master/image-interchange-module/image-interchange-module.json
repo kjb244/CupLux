@@ -22,16 +22,6 @@
           "alt": ""
         }
       ],
-      "mediumVert": [
-        {
-          "img": "{IMAGE||imageBuildingMediumVert}",
-          "alt": ""
-        },
-        {
-          "img": "{IMAGE||imageMapMediumVert}",
-          "alt": ""
-        }
-      ],
       "smallHoriz": [
         {
           "img": "{IMAGE||imageBuildingSmallHoriz}",
@@ -39,16 +29,6 @@
         },
         {
           "img": "{IMAGE||imageMapSmallHoriz}",
-          "alt": ""
-        }
-      ],
-      "smallVert": [
-        {
-          "img": "{IMAGE||imageBuildingSmallVert}",
-          "alt": ""
-        },
-        {
-          "img": "{IMAGE||imageMapSmallVert}",
           "alt": ""
         }
       ]
@@ -59,61 +39,71 @@
       "type": "image",
       "src": "images/main/image-interchange-module/building_desktop.jpg",
       "class": "",
-      "caption": ""
+      "caption": "",
+      "special": "no-source"
     },
     "imageMapLarge": {
       "type": "image",
       "src": "images/main/image-interchange-module/map_desktop.jpg",
       "class": "",
-      "caption": ""
+      "caption": "",
+      "special": "no-source"
     },
     "imageBuildingMediumHoriz": {
       "type": "image",
       "src": "images/main/image-interchange-module/building_tablet_horiz.jpg",
       "class": "",
-      "caption": ""
+      "caption": "",
+      "special": "no-source"
     },
     "imageMapMediumHoriz": {
       "type": "image",
       "src": "images/main/image-interchange-module/map_tablet_horiz.jpg",
       "class": "",
-      "caption": ""
+      "caption": "",
+      "special": "no-source"
     },
     "imageBuildingMediumVert": {
       "type": "image",
       "src": "images/main/image-interchange-module/building_tablet_vertical.jpg",
       "class": "",
-      "caption": ""
+      "caption": "",
+      "special": "no-source"
     },
     "imageMapMediumVert": {
       "type": "image",
       "src": "images/main/image-interchange-module/map_tablet_vertical.jpg",
       "class": "",
-      "caption": ""
+      "caption": "",
+      "special": "no-source"
     },
     "imageBuildingSmallHoriz": {
       "type": "image",
       "src": "images/main/image-interchange-module/building_mobile_horiz.jpg",
       "class": "",
-      "caption": ""
+      "caption": "",
+      "special": "no-source"
     },
     "imageMapSmallHoriz": {
       "type": "image",
       "src": "images/main/image-interchange-module/map_mobile_horiz.jpg",
       "class": "",
-      "caption": ""
+      "caption": "",
+      "special": "no-source"
     },
     "imageBuildingSmallVert": {
       "type": "image",
       "src": "images/main/image-interchange-module/building_mobile_vertical.jpg",
       "class": "",
-      "caption": ""
+      "caption": "",
+      "special": "no-source"
     },
     "imageMapSmallVert": {
       "type": "image",
       "src": "images/main/image-interchange-module/map_mobile_vertical.jpg",
       "class": "",
-      "caption": ""
+      "caption": "",
+      "special": "no-source"
     }
   }
 }

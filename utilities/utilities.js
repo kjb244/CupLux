@@ -26,11 +26,18 @@ exports.imageHelper = function(inp){
 		let dataDest = "/" + imageObj[key]['src'];
 		let clazz = imageObj[key]['class'] || '';
 		let id = imageObj[key]['id'] || '';
+		let special = imageObj[key]['special'] || '';
 
 
 		let div = "<div class='" + clazz + "' id='" + id + "' " + "data-dest='" + dataDest + "'></div>";
 		if (type == 'image'){
-			div = "<image src='" + dataDest + "' class='" + clazz + "' id='" + id + "'></image>";
+			if (special == 'no-source'){
+				div = "<image src='' data-src='" + dataDest + "' class='" + clazz + "' id='" + id + "'></image>";
+			}
+			else{
+				div = "<image src='" + dataDest + "' class='" + clazz + "' id='" + id + "'></image>";
+			}
+			
 		}
 		let imageMatcher = "{IMAGE\\|\\|" + key + "}";
 
