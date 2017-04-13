@@ -10,7 +10,7 @@ $(document).ready(function(){  var main = function(){
 		settings.$target.find('.menu-icon > a').on('click', function(){
 			if (Foundation.utils.is_small_only()){
 				setTimeout(function(){
-					$(window).scroll();
+					//$(window).scroll();
 				},100);
 			}
 		});
@@ -119,6 +119,10 @@ $(document).ready(function(){  var main = function(){
 
 
 		});
+
+		setTimeout(function(){
+			$(document).scroll();
+		},200);
 
 	}
 

@@ -7,13 +7,6 @@ var main = function(){
 
 	var voidMain = function(){
 
-		settings.$target.find('.menu-icon > a').on('click', function(){
-			if (Foundation.utils.is_small_only()){
-				setTimeout(function(){
-					$(window).scroll();
-				},100);
-			}
-		});
 
 		//activate current nav
 		var path = window.location.pathname.replace('/','');
