@@ -59,6 +59,8 @@ var main = function(){
 
 		});
 
+		$(document).foundation('reflow');
+
 	}
 
 
