@@ -59,7 +59,9 @@ var main = function(){
 
 		});
 
-		$(document).foundation('reflow');
+		setTimeout(function(){
+			$(document).scroll();
+		},200);
 
 	}
 
