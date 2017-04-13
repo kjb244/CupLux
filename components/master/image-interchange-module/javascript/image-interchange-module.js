@@ -6,6 +6,14 @@ var main = function(){
 		return (Foundation.utils.is_small_only() == true ? 'small': (Foundation.utils.is_medium_only() == true ? 'medium': 'large'));
 	}
 
+	getOrientation = function(){
+		if (window.matchMedia("(orientation: portrait)").matches) {
+   			return "portrait"
+		}
+		return "landscape";
+
+	}
+
 	hideShowImages = function(){
 
 		var screenSize = getScreenSize();
@@ -15,13 +23,36 @@ var main = function(){
 		$('.orbit-container ul').each(function(idx, val){
 			
 			var clazz = $(val).attr('class').toLowerCase();
+			var bool = false;
 			
 			if (clazz.indexOf(screenSize) > -1){
+				if (screenSize == "small" || screenSize == "medium"){
+					var orientation = getOrientation();
+					if (orientation == "portrait" && clazz.indexOf('vert') > -1){
+						$(val).parent().show();
+						bool = true;
+					}
+					else if (orientation == "landscape" && clazz.indexOf('horiz') > -1){
+						$(val).parent().show();
+						bool = true;
+					}
+				}
+				else{
+					$(val).parent().show();
+					bool = true;
+				}
 				
-				$(val).parent().show();
+
+			}
+
+			if (bool){
 				$(val).find('img').each(function(){
-					$(this).attr('src', $(this).attr('data-src'));
+					if ($(this).attr('src').length < 1 ){
+						$(this).attr('src', $(this).attr('data-src'));
+					}
+					
 				});
+				return false;
 				
 			}
 
@@ -38,8 +69,9 @@ var main = function(){
 			hideShowImages();
 		});
 
-
-
+		$(window).on('orientationchange', function(){
+			hideShowImages();
+		})
 
 
 

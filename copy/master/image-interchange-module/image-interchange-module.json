@@ -22,6 +22,16 @@
           "alt": ""
         }
       ],
+      "mediumVert": [
+        {
+          "img": "{IMAGE||imageBuildingMediumVert}",
+          "alt": ""
+        },
+        {
+          "img": "{IMAGE||imageMapMediumVert}",
+          "alt": ""
+        }
+      ],
       "smallHoriz": [
         {
           "img": "{IMAGE||imageBuildingSmallHoriz}",
@@ -29,6 +39,16 @@
         },
         {
           "img": "{IMAGE||imageMapSmallHoriz}",
+          "alt": ""
+        }
+      ],
+      "smallVert": [
+        {
+          "img": "{IMAGE||imageBuildingSmallVert}",
+          "alt": ""
+        },
+        {
+          "img": "{IMAGE||imageMapSmallVert}",
           "alt": ""
         }
       ]
