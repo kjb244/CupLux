@@ -1,15 +1,46 @@
 {
-    "content": {
-        "images": [
-            {
-                "img": "{IMAGE||imageBuilding}"
-            }
-        ]
+  "content": {
+    "images": [
+      {
+        "imgInterchange": "[/images/main/one-column-image-module/map_mobile_horiz.jpg, (only screen and (max-width: 640px) and (orientation: landscape))], [/images/main/one-column-image-module/map_mobile_vertical.jpg, (only screen and (max-width: 640px) and (orientation: portrait))], [/images/main/one-column-image-module/map_tablet_horiz.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: landscape))],[/images/main/one-column-image-module/map_tablet_vertical.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: portrait))], [/images/main/one-column-image-module/map_desktop.jpg, (only screen and (min-width: 1025px))]"
+      }
+    ]
+  },
+  "IMAGE": {
+    "imageMapSmallHoriz": {
+      "type": "image",
+      "src": "/images/main/one-column-image-module/map_mobile_horiz.jpg",
+      "class": "",
+      "caption": "",
+      "special": "no-source"
     },
-    "IMAGE": {
-        "imageBuilding": {
-            "src": "images/main/one-column-image-module/building.jpg",
-            "class": "image-building"
-        }
+    "imageMapSmallVert": {
+      "type": "image",
+      "src": "/images/main/one-column-image-module/map_mobile_vertical.jpg",
+      "class": "",
+      "caption": "",
+      "special": "no-source"
+    },
+    "imageMapMediumHoriz": {
+      "type": "image",
+      "src": "/images/main/one-column-image-module/map_tablet_horiz.jpg",
+      "class": "",
+      "caption": "",
+      "special": "no-source"
+    },
+    "imageMapMediumVert": {
+      "type": "image",
+      "src": "/images/main/one-column-image-module/map_tablet_vertical.jpg",
+      "class": "",
+      "caption": "",
+      "special": "no-source"
+    },
+    "imageMapLarge": {
+      "type": "image",
+      "src": "/images/main/one-column-image-module/map_desktop.jpg",
+      "class": "",
+      "caption": "",
+      "special": "no-source"
     }
+  }
 }

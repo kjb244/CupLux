@@ -64,19 +64,16 @@
 
 	&.data-module-location-hours{
 
-		.image-building{
-			background: url('/images/main/one-column-image-module/building.jpg') no-repeat center center;
-			height: 200px;
+		[data-interchange]{
+			
 
 			@media #{$small-only}{
 				margin-top: 10px;
 			}
 			@media #{$medium-only}{
-				height: 250px
+				margin-top: 20px;
 			}
 			@media #{$large-up}{
-				height: 300px;
-				background-size: contain;
 				margin-top: 25px;
 			}
 

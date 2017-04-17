@@ -1,19 +1,11 @@
 $(document).ready(function(){  var main = function(){
 
-	$(document).foundation();
 
 	var settings = {};
 	settings.$target = $("[data-module-engagement-module]");
 
 	var voidMain = function(){
 
-		settings.$target.find('.menu-icon > a').on('click', function(){
-			if (Foundation.utils.is_small_only()){
-				setTimeout(function(){
-					//$(window).scroll();
-				},100);
-			}
-		});
 
 		//activate current nav
 		var path = window.location.pathname.replace('/','');
@@ -34,6 +26,17 @@ $(document).ready(function(){  var main = function(){
 
 
 }(); var main = function(){
+
+
+	voidMain = function(){
+
+			$(document).foundation();
+
+	}
+
+	return voidMain();
+
+
 
 
 

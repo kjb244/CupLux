@@ -6,15 +6,30 @@
 	font-size: 22px;
 	img{
 		width: 100%;
-		height: 220px;
-		@media #{$large-up}{
-
-			height: 380px;
+		@media screen and (orientation:portrait) {
+		 	height: 215px;
 		}
+
+		@media screen and (orientation:landscape) {
+			height: 230px;
+		}
+
 
 		@media #{$medium-only}{
 
-			height: 310px;
+			@media screen and (orientation:portrait) {
+			 height: 300px;
+			}
+
+			@media screen and (orientation:landscape) {
+				height: 320px;
+			}
+
+		}
+		
+		@media #{$large-up}{
+
+			height: 380px;
 		}
 	}
 

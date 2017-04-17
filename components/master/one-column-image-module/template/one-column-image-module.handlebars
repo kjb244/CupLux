@@ -2,7 +2,15 @@
 	<div class="row">
 		{{#each this.images}}
 			<div class="small-12 columns">
-				{{{this.img}}}
+				{{#if this.img}}
+					{{{this.img}}}
+				{{/if}}
+				
+				{{#if this.imgInterchange}}
+					<img data-interchange="{{{this.imgInterchange}}}">
+				{{/if}}
+
+				
 			</div>	
 		{{/each}}
 	</div>

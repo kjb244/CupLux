@@ -77,9 +77,12 @@ var main = function(){
 			hideShowImages();
 		})
 
+		$(document).foundation();
+
 
 
 		$('.orbit-container').click();
+
 			
 
 	}
