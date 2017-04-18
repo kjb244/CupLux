@@ -1,19 +1,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.interchange.min.js"></script>
 
+
+<ul  data-orbit data-options="{{../this.dataOrbitOptions}}">
 {{#each content.images}}
-    <ul class="{{@key}}" data-orbit data-options="{{../this.dataOrbitOptions}}">
-    {{#each this}}
-      <li>
-        {{{this.img}}}
-        {{#if this.img.caption}}
-          <div class="orbit-caption">
-            {{this.img.caption}}
-          </div>
-        {{/if}}
-      </li>
-    {{/each}}  
-  </ul>
-{{/each}}
+  <li>
+    <img data-interchange="{{{this.imgInterchange}}}">
+    {{#if this.img.caption}}
+      <div class="orbit-caption">
+        {{this.img.caption}}
+      </div>
+    {{/if}}
+  </li>
+{{/each}}  
+</ul>
+
 
 
 
