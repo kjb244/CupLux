@@ -1,8 +1,8 @@
 {{#with content}}
 
-	<div class="row">
+	<div class="row show-for-medium-up">
 		<div class="medium-12 medium-centered columns">
-			{{{this.header.img}}}
+			{{{this.header.imgMedium}}}
 		</div>
 
 	</div>
@@ -10,7 +10,8 @@
 		<div class="sticky">
 			<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [medium,large]">
 				<ul class="title-area">
-					<li class="name">
+					<li class="name show-for-small-only">
+						{{{this.header.imgSmall}}}
 					</li>
 					<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 					<li class="toggle-topbar menu-icon">

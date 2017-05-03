@@ -74,11 +74,15 @@ nav * {
       width: 340px; } }
 
 [data-module-engagement-module] .top-bar {
-  transition: height .5s linear; }
+  transition: height .2s linear; }
 
 [data-module-engagement-module] .top-bar.expanded {
-  transition: height .5s linear;
-  height: 285px; }
+  transition: height .2s linear;
+  height: 320px; }
+
+[data-module-engagement-module] .name img {
+  height: 46px !important;
+  width: 46px !important; }
 
 @media only screen and (min-width: 40.0625em) {
   [data-module-engagement-module] nav .top-bar-section ul {

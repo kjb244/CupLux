@@ -22,15 +22,21 @@
 	}
 
 	.top-bar{
-		transition: height .5s linear;
+		transition: height .2s linear;
 	}
 
 	.top-bar.expanded{
-		transition: height .5s linear;
-		height: 285px;
+		transition: height .2s linear;
+		height: 320px;
+	}
+
+	.name img{
+		height: 46px !important;
+		width: 46px !important;
 	}
 
 	nav .top-bar-section{
+
 		ul{
 			@media #{$medium-up}{
 				display: flex;

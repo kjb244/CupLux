@@ -1,20 +1,27 @@
 {
   "content": {
     "header": {
-      "img": "{IMAGE||imageBlocCard}"
+      "imgMedium": "{IMAGE||imageBlocCardMedium}",
+      "imgSmall": "{IMAGE||imageBlocCardSmall}"
     },
     "nav": [
       "{LINK||main}",
       "{LINK||locationAndHours}",
+      "{LINK||menu}",
       "{LINK||rewards}",
       "{LINK||natureForAll}",
       "{LINK||about}"
     ]
   },
   "IMAGE": {
-    "imageBlocCard": {
+    "imageBlocCardMedium": {
       "src": "images/main/engagement-module/cuplux-drive-thru.png",
       "class": "background-image-header-main"
+    },
+    "imageBlocCardSmall": {
+      "type": "image",
+      "src": "images/main/engagement-module/cuplux-drive-thru.png",
+      "class": ""
     }
   },
   "LINKS": {
@@ -27,6 +34,11 @@
       "href": "/location-hours",
       "id": "location-and-hours-link",
       "content": "LOCATION AND HOURS"
+    },
+    "menu": {
+      "href": "/menu",
+      "id": "menu-link",
+      "content": "MENU"
     },
     "rewards": {
       "href": "/rewards",

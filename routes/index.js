@@ -18,6 +18,10 @@ router.get('/nature-for-all', function(req, res){
 	res.sendFile(buildDirectory + 'nature-for-all.html');
 });
 
+router.get('/menu', function(req, res){
+	res.sendFile(buildDirectory + 'menu.html');
+});
+
 router.get('/rewards', function(req, res){
 	res.sendFile(buildDirectory + 'rewards.html');
 });

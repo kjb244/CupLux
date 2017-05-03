@@ -1,6 +1,6 @@
 {
-  "url": "main",
-  "title": "CupLux - Main",
+  "url": "menu",
+  "title": "CupLux - Menu",
   "modules": [
     {
       "type": "header",
@@ -17,17 +17,7 @@
     },
     {
       "type": "body",
-      "modules": [
-        {
-          "name": "/master/one-column-content-module",
-          "copy": "main-one-column-content-module.json",
-          "class": "data-module-main-one-column-content"
-        },
-        {
-          "name": "/master/image-interchange-module",
-          "copy": "image-interchange-module.json"
-        }
-      ]
+      "modules": []
     },
     {
       "type": "footer",

@@ -1,18 +1,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.interchange.min.js"></script>
 
 
-<ul  data-orbit data-options="{{../this.dataOrbitOptions}}">
-{{#each content.images}}
-  <li>
-    <img data-interchange="{{{this.imgInterchange}}}">
-    {{#if this.img.caption}}
-      <div class="orbit-caption">
-        {{this.img.caption}}
-      </div>
-    {{/if}}
-  </li>
-{{/each}}  
-</ul>
+{{#with content.imgInterchange}}
+    <img data-interchange="{{{this}}}">
+{{/with}}  
+
 
 
 

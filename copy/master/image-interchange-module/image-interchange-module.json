@@ -1,26 +1,11 @@
 {
   "content": {
-    "dataOrbitOptions": "timer_speed:3000;",
-    "images": [
-      {
-        "imgInterchange": "[/images/main/image-interchange-module/map_mobile_horiz.jpg, (only screen and (max-width: 640px) and (orientation: landscape))], [/images/main/image-interchange-module/map_mobile_vertical.jpg, (only screen and (max-width: 640px) and (orientation: portrait))], [/images/main/image-interchange-module/map_tablet_horiz.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: landscape))],[/images/main/image-interchange-module/map_tablet_vertical.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: portrait))], [/images/main/image-interchange-module/map_desktop.jpg, (only screen and (min-width: 1025px))]"
-      },
-      {
-        "imgInterchange": "[/images/main/image-interchange-module/building_mobile_horiz.jpg, (only screen and (max-width: 640px) and (orientation: landscape))], [/images/main/image-interchange-module/building_mobile_vertical.jpg, (only screen and (max-width: 640px) and (orientation: portrait))], [/images/main/image-interchange-module/building_tablet_horiz.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: landscape))],[/images/main/image-interchange-module/building_tablet_vertical.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: portrait))], [/images/main/image-interchange-module/building_desktop.jpg, (only screen and (min-width: 1025px))]"
-      }
-    ]
+    "imgInterchange": "[/images/main/image-interchange-module/building_mobile_horiz.jpg, (only screen and (max-width: 640px) and (orientation: landscape))], [/images/main/image-interchange-module/building_mobile_vertical.jpg, (only screen and (max-width: 640px) and (orientation: portrait))], [/images/main/image-interchange-module/building_tablet_horiz.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: landscape))],[/images/main/image-interchange-module/building_tablet_vertical.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: portrait))], [/images/main/image-interchange-module/building_desktop.jpg, (only screen and (min-width: 1025px))]"
   },
   "IMAGE": {
     "imageBuildingLarge": {
       "type": "image",
       "src": "images/main/image-interchange-module/building_desktop.jpg",
-      "class": "",
-      "caption": "",
-      "special": "no-source"
-    },
-    "imageMapLarge": {
-      "type": "image",
-      "src": "images/main/image-interchange-module/map_desktop.jpg",
       "class": "",
       "caption": "",
       "special": "no-source"
@@ -32,23 +17,9 @@
       "caption": "",
       "special": "no-source"
     },
-    "imageMapMediumHoriz": {
-      "type": "image",
-      "src": "images/main/image-interchange-module/map_tablet_horiz.jpg",
-      "class": "",
-      "caption": "",
-      "special": "no-source"
-    },
     "imageBuildingMediumVert": {
       "type": "image",
       "src": "images/main/image-interchange-module/building_tablet_vertical.jpg",
-      "class": "",
-      "caption": "",
-      "special": "no-source"
-    },
-    "imageMapMediumVert": {
-      "type": "image",
-      "src": "images/main/image-interchange-module/map_tablet_vertical.jpg",
       "class": "",
       "caption": "",
       "special": "no-source"
@@ -60,23 +31,9 @@
       "caption": "",
       "special": "no-source"
     },
-    "imageMapSmallHoriz": {
-      "type": "image",
-      "src": "images/main/image-interchange-module/map_mobile_horiz.jpg",
-      "class": "",
-      "caption": "",
-      "special": "no-source"
-    },
     "imageBuildingSmallVert": {
       "type": "image",
       "src": "images/main/image-interchange-module/building_mobile_vertical.jpg",
-      "class": "",
-      "caption": "",
-      "special": "no-source"
-    },
-    "imageMapSmallVert": {
-      "type": "image",
-      "src": "images/main/image-interchange-module/map_mobile_vertical.jpg",
       "class": "",
       "caption": "",
       "special": "no-source"
