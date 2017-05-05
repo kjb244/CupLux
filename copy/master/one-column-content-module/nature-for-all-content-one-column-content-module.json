@@ -1,0 +1,18 @@
+{
+  "content": [
+    {
+      "header": "#CanopyLove ",
+      "paras": [
+        "TreesCharlotte is a non-profit organization working to preserve, increase and diversify our tree canopy here in Queen City.  Currently, our beautiful canopy covers 47% of the city.  TreesCharlotte has a goal of reaching 50% canopy coverage by the year 2050 (50x50).  This will require the planting of 500,000 trees! (new paragraph) CupLux will be doing small community events planting trees in both our neck of the woods (pun, very much intended) as well as in other parts of the city.  As our ability to make an impact grows, so will the frequency of these and other urban conservation events we help with.  If you want to learn about how you can help TreesCharlotte with their 50x50 goal visit {LINK||treesCharlotteLink}",
+        "#CanopyLove your own photos to share what you love about our trees and help spread awareness! "
+      ]
+    }
+  ],
+  "LINKS": {
+    "treesCharlotteLink": {
+      "href": "http://TreesCharlotte.org",
+      "id": "trees-charlotte-link",
+      "content": "Trees Charlotte."
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "url": "nature-for-all",
-  "title": "CupLux - Nature For All",
+  "title": "Cup Lux Coffee Drive-Thru",
   "modules": [
     {
       "type": "header",
@@ -19,14 +19,19 @@
       "type": "body",
       "modules": [
         {
-          "name": "/master/one-column-content-module",
-          "copy": "nature-for-all-one-column-content-module.json",
-          "class": "data-module-nature-for-one"
-        },
-        {
           "name": "/master/one-column-image-module",
           "copy": "nature-for-all-one-column-image-module.json",
           "class": "data-module-nature-for-one"
+        },
+        {
+          "name": "/master/one-column-content-module",
+          "copy": "nature-for-all-link-one-column-content-module.json",
+          "class": "data-module-link-nature-for-one"
+        },
+        {
+          "name": "/master/one-column-content-module",
+          "copy": "nature-for-all-content-one-column-content-module.json",
+          "class": "data-module-content-nature-for-one"
         },
         {
           "name": "/master/flex-div-module",

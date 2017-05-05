@@ -2,14 +2,14 @@
   "content": {
     "images": [
       {
-        "img": "{IMAGE||imageNatureForAll}"
+        "img": "{IMAGE||imageTreesCharlote}"
       }
     ]
   },
   "IMAGE": {
-    "imageNatureForAll": {
-      "src": "images/main/one-column-image-module/nature-for-all.jpg",
-      "class": "image-nature-for-all"
+    "imageTreesCharlote": {
+      "src": "images/main/one-column-image-module/Trees_Charlotte Logo_high_res.png",
+      "class": "image-trees-charlotte"
     }
   }
 }

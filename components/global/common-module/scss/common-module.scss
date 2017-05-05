@@ -27,15 +27,15 @@ nav *{
 
 [data-module-body]{
 	>div{
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 5px;
+		margin-right: 5px;
 		@media #{$medium-only}{
-			margin-left: 15px;
-			margin-right: 15px;
+			margin-left: 10px;
+			margin-right: 10px;
 		}
 		@media #{$large-up}{
-			margin-left: 20px;
-			margin-right: 20px;
+			margin-left: 10px;
+			margin-right: 10px;
 		}
 
 	}
@@ -45,7 +45,7 @@ nav *{
 	nav a{
 		font-size: 14px !important;
 		@media #{$medium-only}{
-			font-size: 15px !important;
+			font-size: 14px !important;
 		}
 		@media #{$large-up}{
 			font-size: 19px !important;
@@ -56,12 +56,12 @@ nav *{
 [data-module-body]{
 
 	p, a{
-		font-size: 13px;
+		font-size: 15px;
 		@media #{$medium-only}{
-			font-size: 14px;
+			font-size: 16px;
 		}
 		@media #{$large-up}{
-			font-size: 15px;
+			font-size: 17px;
 		}
 
 	}

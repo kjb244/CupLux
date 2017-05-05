@@ -1,6 +1,6 @@
 {
   "url": "menu",
-  "title": "CupLux - Menu",
+  "title": "Cup Lux Coffee Drive-Thru",
   "modules": [
     {
       "type": "header",
@@ -17,7 +17,13 @@
     },
     {
       "type": "body",
-      "modules": []
+      "modules": [
+        {
+          "name": "/master/one-column-content-module",
+          "copy": "menu-one-column-content-module.json",
+          "class": "data-module-menu"
+        }
+      ]
     },
     {
       "type": "footer",

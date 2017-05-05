@@ -4,18 +4,19 @@
 [data-module-one-column-image-module]{
 
 	&.data-module-nature-for-one{
-		.image-nature-for-all{
-			background: url('/images/main/one-column-image-module/nature-for-all.jpg') no-repeat center center;
+		.image-trees-charlotte{
+			background: url('/images/main/one-column-image-module/Trees_Charlotte Logo_high_res.png') no-repeat center center;
 			background-size: contain;
-			height: 280px;
+			height: 130px;
+			margin-top: 20px;
 			@media #{$medium-only}{
-				height:340px
+				height:240px
 			}
 			@media #{$large-up}{
-				height: 340px;
+				height: 240px;
 			}
 
-			margin-bottom: -30px;
+		
 
 		}
 
@@ -99,11 +100,6 @@
 
 	}
 
-	
 
-
-
-
-	
 	
 }
