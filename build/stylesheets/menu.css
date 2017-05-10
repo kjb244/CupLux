@@ -154,57 +154,70 @@ nav * {
 
 [data-module-one-column-content-module].data-module-rewards-faq {
   display: none; }
- [data-module-footer-bottom-bar-module] footer {
+ [data-module-footer-bottom-bar-module] footer.show-for-small-only {
+  background-color: #f9f7f5;
+  padding: 30px; }
+  [data-module-footer-bottom-bar-module] footer.show-for-small-only .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    [data-module-footer-bottom-bar-module] footer.show-for-small-only .menu li {
+      list-style-type: none;
+      font-weight: bold; }
+    [data-module-footer-bottom-bar-module] footer.show-for-small-only .menu a {
+      color: #665f5f; }
+    [data-module-footer-bottom-bar-module] footer.show-for-small-only .menu > li:nth-child(n+2) {
+      margin-top: 5px; }
+  [data-module-footer-bottom-bar-module] footer.show-for-small-only .social {
+    display: flex;
+    justify-content: center; }
+    [data-module-footer-bottom-bar-module] footer.show-for-small-only .social > div:nth-child(n+2) {
+      margin-left: 10px; }
+    [data-module-footer-bottom-bar-module] footer.show-for-small-only .social i {
+      color: #665f5f; }
+  [data-module-footer-bottom-bar-module] footer.show-for-small-only .main-text {
+    text-align: center;
+    margin-top: 20px; }
+
+[data-module-footer-bottom-bar-module] footer.show-for-medium-up {
   position: relative;
   margin-top: 15px;
   background-color: #5B2B82; }
-  @media only screen and (max-width: 40em) {
-    [data-module-footer-bottom-bar-module] footer {
-      display: flex;
-      align-items: center; } }
   @media only screen and (min-width: 40.0625em) {
-    [data-module-footer-bottom-bar-module] footer {
+    [data-module-footer-bottom-bar-module] footer.show-for-medium-up {
       height: 60px; } }
   @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-    [data-module-footer-bottom-bar-module] footer {
+    [data-module-footer-bottom-bar-module] footer.show-for-medium-up {
       margin-top: 30px; } }
   @media only screen and (min-width: 64.0625em) {
-    [data-module-footer-bottom-bar-module] footer {
+    [data-module-footer-bottom-bar-module] footer.show-for-medium-up {
       margin-top: 40px; } }
-  [data-module-footer-bottom-bar-module] footer .main-text {
+  [data-module-footer-bottom-bar-module] footer.show-for-medium-up .main-text {
     text-align: center;
-    margin: 0;
     color: white; }
     @media only screen and (min-width: 40.0625em) {
-      [data-module-footer-bottom-bar-module] footer .main-text {
+      [data-module-footer-bottom-bar-module] footer.show-for-medium-up .main-text {
         line-height: 60px; } }
     @media only screen and (max-width: 40em) {
-      [data-module-footer-bottom-bar-module] footer .main-text {
+      [data-module-footer-bottom-bar-module] footer.show-for-medium-up .main-text {
         flex: 0 0 50%;
         margin: 0; } }
-  [data-module-footer-bottom-bar-module] footer a {
+  [data-module-footer-bottom-bar-module] footer.show-for-medium-up a {
     color: white; }
-  [data-module-footer-bottom-bar-module] footer .social {
+  [data-module-footer-bottom-bar-module] footer.show-for-medium-up .social {
     color: white;
     display: flex; }
-    @media only screen and (max-width: 40em) {
-      [data-module-footer-bottom-bar-module] footer .social {
-        flex: 0 0 50%;
-        align-items: center;
-        justify-content: flex-end; }
-        [data-module-footer-bottom-bar-module] footer .social > div {
-          margin-right: 5px; } }
     @media only screen and (min-width: 40.0625em) {
-      [data-module-footer-bottom-bar-module] footer .social {
+      [data-module-footer-bottom-bar-module] footer.show-for-medium-up .social {
         position: absolute;
         top: 0;
         right: 10px;
         line-height: 60px; }
-        [data-module-footer-bottom-bar-module] footer .social > div {
+        [data-module-footer-bottom-bar-module] footer.show-for-medium-up .social > div {
           margin-right: 10px; } }
     @media only screen and (min-width: 40.0625em) and (min-width: 64.0625em) {
-      [data-module-footer-bottom-bar-module] footer .social > div {
+      [data-module-footer-bottom-bar-module] footer.show-for-medium-up .social > div {
         margin-right: 15px; } }
-    [data-module-footer-bottom-bar-module] footer .social > div:not(.text) {
+    [data-module-footer-bottom-bar-module] footer.show-for-medium-up .social > div:not(.text) {
       display: flex;
       align-items: center; }

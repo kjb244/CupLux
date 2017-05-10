@@ -1,11 +1,19 @@
 {
   "content": {
+    "smallMenu": [
+      "{LINK||main}",
+      "{LINK||locationAndHours}",
+      "{LINK||menu}",
+      "{LINK||rewards}",
+      "{LINK||natureForAll}",
+      "{LINK||about}"
+    ],
     "text": "Cuplux Coffee 3115 Freedom Dr. Charlotte, NC",
     "social": [
       {
         "type": "icon",
         "class": "fa fa-facebook-official fa-2x",
-        "href": "#"
+        "href": "https://www.facebook.com/cupluxcoffee/"
       },
       {
         "type": "icon",
@@ -17,5 +25,37 @@
         "text": "@CupLux"
       }
     ]
+  },
+  "LINKS": {
+    "main": {
+      "href": "/main",
+      "id": "main",
+      "content": "HOME"
+    },
+    "locationAndHours": {
+      "href": "/location-hours",
+      "id": "location-and-hours-link",
+      "content": "LOCATION AND HOURS"
+    },
+    "menu": {
+      "href": "/menu",
+      "id": "menu-link",
+      "content": "MENU"
+    },
+    "rewards": {
+      "href": "/rewards",
+      "id": "rewards-link",
+      "content": "REWARDS"
+    },
+    "natureForAll": {
+      "href": "/nature-for-all",
+      "id": "nature-for-all-link",
+      "content": "NATURE FOR ALL"
+    },
+    "about": {
+      "href": "/about",
+      "id": "about-link",
+      "content": "ABOUT"
+    }
   }
 }

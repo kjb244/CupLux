@@ -1,8 +1,9 @@
 {{#with content}}
 
-
-		<footer>
-			<div class="main-text">{{{this.text}}}</div>
+		<footer class="show-for-medium-up">
+			<div class="main-text">
+				{{{this.text}}}
+			</div>
 			<div class="social">
 				{{#each this.social}}
 
@@ -17,18 +18,34 @@
 					{{#ifCond this.type '==' 'text' }}
 						<div class="text">{{this.text}}</div>
 					{{/ifCond}}
-
-
-
 				{{/each}}
-
-
 			</div>
-
-
-
 		</footer>
 
+		<footer class="show-for-small-only">
+			<ul class="menu">
+				{{#each this.smallMenu}}
+					<li>
+						{{{this}}}
+					</li>
+				{{/each}}
+			</ul>
 
+			<div class="social">
+				{{#each this.social}}
+					{{#ifCond this.type '==' 'icon' }}
+						<div>
+							<a href="{{this.href}}">
+								<i class="{{this.class}}"></i>
+							</a>
+						</div>
+					{{/ifCond}}
+				{{/each}}
+			</div>
+
+			<div class="main-text">
+				{{{this.text}}}
+			</div>
+		</footer>
 
 {{/with}}
