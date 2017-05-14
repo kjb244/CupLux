@@ -1,0 +1,55 @@
+@import "../../../utils/scss/foundation/_settings.scss";
+
+[data-module-image-left-content-right-module]{
+
+	.container{
+		display: flex;
+		flex-direction: column;
+		@media #{$medium-up}{
+			flex-direction: row;
+
+			.left{
+				flex: 0 0 40%;
+
+			}
+		}
+	}
+
+
+
+	&.data-module-nature-for-one{
+
+
+			.left{
+
+				img{
+					margin-top: -56px;
+					margin-bottom: -40px;
+					@media #{$medium-only}{
+						margin-top: -40px;
+					}
+		
+					
+
+				}
+			}
+		}
+
+
+
+	&.data-module-nature-for-one-bottom{
+		display: none;
+		.right{
+			@media #{$medium-up}{
+				margin-left: 44px;
+			}
+			@media #{$small-only}{
+				margin-top: 20px;
+			}
+			
+		}
+	}
+
+
+
+}

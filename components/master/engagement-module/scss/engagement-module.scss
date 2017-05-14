@@ -47,6 +47,10 @@
 				border-top: 2px solid $purple;
 				border-bottom: 2px solid $purple;
 
+				li{
+					border-bottom: 1px solid $purple;
+				}
+
 				li a{
 					background: white !important;
 					color: $purple;

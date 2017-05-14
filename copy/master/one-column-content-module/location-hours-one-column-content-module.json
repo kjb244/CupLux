@@ -11,7 +11,7 @@
   ],
   "LINKS": {
     "getDirections": {
-      "href": "javascript:void(0)",
+      "href": "https://www.google.com/maps/place/Cuplux+Coffee+Drive-Thru/@35.242052,-80.8916207,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a1f2f1db2479:0x239137608d2ba840!8m2!3d35.242052!4d-80.889432",
       "id": "get-directions-link",
       "content": "Get Directions to Cuplux"
     }

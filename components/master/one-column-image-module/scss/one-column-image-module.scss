@@ -3,25 +3,7 @@
 
 [data-module-one-column-image-module]{
 
-	&.data-module-nature-for-one{
-		.image-trees-charlotte{
-			background: url('/images/main/one-column-image-module/Trees_Charlotte Logo_high_res.png') no-repeat center center;
-			background-size: contain;
-			height: 130px;
-			margin-top: 20px;
-			@media #{$medium-only}{
-				height:240px
-			}
-			@media #{$large-up}{
-				height: 240px;
-			}
 
-		
-
-		}
-
-
-	}
 
 	&.data-module-rewards-bloc-card{
 

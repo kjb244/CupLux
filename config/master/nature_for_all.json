@@ -19,8 +19,8 @@
       "type": "body",
       "modules": [
         {
-          "name": "/master/one-column-image-module",
-          "copy": "nature-for-all-one-column-image-module.json",
+          "name": "/master/image-left-content-right-module",
+          "copy": "nature-for-all-top-image-left-content-right-module.json",
           "class": "data-module-nature-for-one"
         },
         {
@@ -29,13 +29,9 @@
           "class": "data-module-link-nature-for-one"
         },
         {
-          "name": "/master/one-column-content-module",
-          "copy": "nature-for-all-content-one-column-content-module.json",
-          "class": "data-module-content-nature-for-one"
-        },
-        {
-          "name": "/master/flex-div-module",
-          "copy": "flex-div-nature-for-all-module.json"
+          "name": "/master/image-left-content-right-module",
+          "copy": "nature-for-all-bottom-image-left-content-right-module.json",
+          "class": "data-module-nature-for-one-bottom"
         }
       ]
     },

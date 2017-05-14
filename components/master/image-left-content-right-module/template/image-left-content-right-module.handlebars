@@ -1,0 +1,41 @@
+{{#with content}}
+	<div class="row container">
+		{{#with this.left}}
+			<div class="left">
+				{{{this.img}}}
+			</div>
+		{{/with}}
+
+		{{#with this.right}}
+			<div class="right">
+				{{#each this}}
+					<div class="row collapse">
+						<div class="small-12 medium-12 medium-centered text-center columns">
+							{{#if this.header}}
+								<h3 class="{{#unless @index}}first{{/unless}}">{{{this.header}}}</h3>
+							{{/if}}
+
+							{{#if this.link}}
+								<p class="link">
+									{{{this.link.link}}}
+									{{#if this.link.arrow}}
+										{{{this.link.arrow}}}
+									{{/if}}
+								</p>
+							{{/if}}
+
+							{{#each this.paras}}
+								<div class="row collapse">
+									<div class="small-12 medium-12 medium-centered columns paras">
+										<p>{{{this}}}<p>
+
+									</div>	
+								</div>
+							{{/each}}
+						</div>
+					</div>
+				{{/each}}
+			</div>
+		{{/with}}
+	</div>
+{{/with}}
