@@ -2,7 +2,7 @@
   "content": {
     "header": {
       "imgMedium": "{IMAGE||imageBlocCardMedium}",
-      "imgSmall": "{IMAGE||imageBlocCardSmall}"
+      "imgSmall": "{IMAGE||imageSmallPurpleLogo}"
     },
     "nav": [
       "{LINK||main}",
@@ -18,9 +18,9 @@
       "src": "images/main/engagement-module/cuplux-drive-thru.png",
       "class": "background-image-header-main"
     },
-    "imageBlocCardSmall": {
+    "imageSmallPurpleLogo": {
       "type": "image",
-      "src": "images/main/engagement-module/cuplux-drive-thru.png",
+      "src": "images/main/engagement-module/small-purple-logo.png",
       "class": ""
     }
   },

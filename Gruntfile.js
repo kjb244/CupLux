@@ -50,6 +50,7 @@ module.exports = function(grunt) {
 		//loop through page setup
 		let configPath = path.join(__dirname, 'config');
 		let buildPath = path.join(__dirname, 'build');
+		let prodBuildPath = path.join(__dirname, 'prod_build');
 		let componentsPath = path.join(__dirname, 'components');
 		let copyPath = path.join(__dirname, 'copy');
 		let configFoldersArr = fs.readdirSync(configPath);
@@ -182,18 +183,18 @@ module.exports = function(grunt) {
 					css = new Buffer(css.css, 'utf8'); 
 
 					fileName = path.join(buildPath, "stylesheets", "foundation.css");
-					fs.writeFile(fileName, css);
+					fs.writeFileSync(fileName, css);
 					
 				}
 
 				
 				//write css file to file system
 				fileName = path.join(buildPath, "stylesheets",  moduleObj['url'] + ".css");
-				fs.writeFile(fileName, moduleObj['css']);
+				fs.writeFileSync(fileName, moduleObj['css']);
 
 				//write js to file system
 				fileName = path.join(buildPath, "javascripts", moduleObj['url'] +  ".js");
-				fs.writeFile(fileName, "$(document).ready(function(){ " + moduleObj['js'] + "})");
+				fs.writeFileSync(fileName, "$(document).ready(function(){ " + moduleObj['js'] + "})");
 
 				//create head tag
 				let title = "<title>" + moduleObj['title'] + "</title>";
@@ -215,12 +216,58 @@ module.exports = function(grunt) {
 				//finally write html file to file system
 				moduleObj['html'] = "<html>" + head + "<body>" + moduleObj['html'] + "</body></html>";
 				fileName = path.join(buildPath, moduleObj['url'] + ".html");
-				fs.writeFile(fileName, moduleObj['html']);
+				fs.writeFileSync(fileName, moduleObj['html']);
 			}
 			
 			
 
 		}
+
+		//do production build
+		rmDir(prodBuildPath);
+		//copy local build into prod
+		fsExtra.copySync(buildPath, prodBuildPath);
+
+		//loop through files in prodBuildPath
+		let htmlFilePath = fs.readdirSync(prodBuildPath);
+		for (let j in htmlFilePath){
+			let filePath = path.join(prodBuildPath,htmlFilePath[j]);
+			//fix html issues
+			if (! isDir(filePath)){
+				let content = fs.readFileSync(filePath).toString();
+				//change images
+				content = content.replace(/src='\/images/g, "src='\.\/images")
+				//change links
+								 .replace(/(<a href=')(\/)([A-z-]+)/g,"$1.$2$3.html");
+				
+
+				//delete file
+				fs.unlinkSync(filePath);
+				//rewrite
+				fs.writeFileSync(filePath, content);
+			}
+			
+		}
+
+		//now loop through css files and fix background image issues
+		let cssFilePath = fs.readdirSync(path.join(prodBuildPath,'stylesheets'));
+		for(let j in cssFilePath){
+			let filePath = path.join(prodBuildPath, 'stylesheets', cssFilePath[j]);
+			if (! isDir(filePath)){
+				if (filePath.includes('foundation')){
+					continue;
+				}
+				let content = fs.readFileSync(filePath).toString();
+
+				content = content.replace(/(background-image:)(\s+)(url\("|')(\/images)/g,"$1$2$3../images")
+								 .replace(/(background:)(\s+)(url\("|')(\/images)/g,"$1$2$3../images");
+				//delete file
+				fs.unlinkSync(filePath);
+				//rewrite
+				fs.writeFileSync(filePath, content);
+			}
+		}
+
 
 		
 
@@ -248,6 +295,10 @@ module.exports = function(grunt) {
     		return true;
     	}
     	return false;
+    }
+
+    function isDir (dirPath){
+    	return fs.lstatSync(dirPath).isDirectory()
     }
 
     function mkDir (dirPath){

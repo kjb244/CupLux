@@ -8,7 +8,7 @@ var main = function(){
 
 
 		//activate current nav
-		var path = window.location.pathname.replace('/','');
+		var path = window.location.pathname.split('/').reverse()[0].replace('/','').replace('.html', '');
 		var pathArr = path.split('-');
 
 		for(var i=0; i<pathArr.length; i++){

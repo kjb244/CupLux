@@ -15,18 +15,31 @@
 		}
 	}
 
+	&.data-module-menu{
+		margin-top: 20px;
+		h3{
+			color: $purple;
+		}
+	}
+
 
 
 	&.data-module-nature-for-one{
 
 
 			.left{
+				@media #{$medium-only}{
+					flex: 0 0 40%;
+				}
+				@media #{$large-up}{
+					flex: 0 0 33%;
+				}
 
 				img{
-					margin-top: -56px;
+					margin-top: -28px;
 					margin-bottom: -40px;
 					@media #{$medium-only}{
-						margin-top: -40px;
+						margin-top: -20px;
 					}
 		
 					

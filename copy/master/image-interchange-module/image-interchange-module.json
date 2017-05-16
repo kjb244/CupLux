@@ -1,6 +1,6 @@
 {
   "content": {
-    "imgInterchange": "[/images/main/image-interchange-module/building_mobile_horiz.jpg, (only screen and (max-width: 640px) and (orientation: landscape))], [/images/main/image-interchange-module/building_mobile_vertical.jpg, (only screen and (max-width: 640px) and (orientation: portrait))], [/images/main/image-interchange-module/building_tablet_horiz.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: landscape))],[/images/main/image-interchange-module/building_tablet_vertical.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: portrait))], [/images/main/image-interchange-module/building_desktop.jpg, (only screen and (min-width: 1025px))]"
+    "imgInterchange": "[./images/main/image-interchange-module/building_mobile_horiz.jpg, (only screen and (max-width: 640px) and (orientation: landscape))], [./images/main/image-interchange-module/building_mobile_vertical.jpg, (only screen and (max-width: 640px) and (orientation: portrait))], [./images/main/image-interchange-module/building_tablet_horiz.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: landscape))],[./images/main/image-interchange-module/building_tablet_vertical.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: portrait))], [./images/main/image-interchange-module/building_desktop.jpg, (only screen and (min-width: 1025px))]"
   },
   "IMAGE": {
     "imageBuildingLarge": {

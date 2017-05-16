@@ -2,7 +2,7 @@
   "content": {
     "images": [
       {
-        "imgInterchange": "[/images/main/one-column-image-module/map_mobile_horiz.jpg, (only screen and (max-width: 640px) and (orientation: landscape))], [/images/main/one-column-image-module/map_mobile_vertical.jpg, (only screen and (max-width: 640px) and (orientation: portrait))], [/images/main/one-column-image-module/map_tablet_horiz.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: landscape))],[/images/main/one-column-image-module/map_tablet_vertical.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: portrait))], [/images/main/one-column-image-module/map_desktop.jpg, (only screen and (min-width: 1025px))]"
+        "imgInterchange": "[./images/main/one-column-image-module/map_mobile_horiz.jpg, (only screen and (max-width: 640px) and (orientation: landscape))], [./images/main/one-column-image-module/map_mobile_vertical.jpg, (only screen and (max-width: 640px) and (orientation: portrait))], [./images/main/one-column-image-module/map_tablet_horiz.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: landscape))],[./images/main/one-column-image-module/map_tablet_vertical.jpg, (only screen and (min-width: 641px) and (max-width: 1024px) and (orientation: portrait))], [./images/main/one-column-image-module/map_desktop.jpg, (only screen and (min-width: 1025px))]"
       }
     ]
   },
