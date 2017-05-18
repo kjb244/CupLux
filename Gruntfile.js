@@ -61,6 +61,10 @@ module.exports = function(grunt) {
 		//copy over any public files we need
 		fsExtra.copySync(path.join(__dirname, 'public'), buildPath);
 
+		//copy favicon
+		fsExtra.copySync(path.join(__dirname, 'assets', 'images', 'main', 'favicons'), 
+									path.join(buildPath, 'images', 'main', 'favicons'));
+	
 		//loop through config
 		for(let i in configFoldersArr){
 			
@@ -205,11 +209,16 @@ module.exports = function(grunt) {
 				let fontAwesomeCss = "<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>";
 				let moduleCombinedCss = "<link rel='stylesheet' type='text/css' href='stylesheets/" + moduleObj['url'] + 
 										".css'>";
+				let favicon = "";
+				let faviconFilePath = fs.readdirSync(path.join(buildPath, "images", "main", "favicons"));
+				if (faviconFilePath[0]){
+					favicon = "<link rel='icon' href='./images/main/favicons/" + faviconFilePath[0] + "'>";
+				}
 				let jqueryJS = "<script src='javascripts/jquery.js'></script>";
 				let foundationJS = "<script src='javascripts/foundation.min.js'></script>";
 				let jsDocumentReady2 = "<script src='javascripts/" + moduleObj['url'] + ".js'></script>";
 				let head = "<head>" + title + foundationMetaTag +  camptonBoldCss + camptonLightCss + 
-				           foundationCss + fontAwesomeCss + moduleCombinedCss + jqueryJS + foundationJS + 
+				           foundationCss + favicon + fontAwesomeCss + moduleCombinedCss + jqueryJS + foundationJS + 
 				           jsDocumentReady2 +  "</head>";
 
 

@@ -8,7 +8,7 @@
   },
   "IMAGE": {
     "imageBlocCard": {
-      "src": "images/main/one-column-image-module/bloc_card.jpg",
+      "src": "images/main/one-column-image-module/bloc-card-savings.jpg",
       "class": "image-bloc-card"
     }
   }

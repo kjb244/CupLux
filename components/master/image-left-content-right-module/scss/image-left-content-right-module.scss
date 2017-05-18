@@ -46,6 +46,15 @@
 
 				}
 			}
+
+			.paras{
+				@media #{$medium-only}{
+					margin-top: 25px;
+				}
+				@media #{$large-up}{
+					margin-top: 30px;
+				}
+			}
 		}
 
 

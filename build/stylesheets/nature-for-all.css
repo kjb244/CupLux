@@ -130,6 +130,14 @@ nav * {
     [data-module-image-left-content-right-module].data-module-nature-for-one .left img {
       margin-top: -20px; } }
 
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  [data-module-image-left-content-right-module].data-module-nature-for-one .paras {
+    margin-top: 25px; } }
+
+@media only screen and (min-width: 64.0625em) {
+  [data-module-image-left-content-right-module].data-module-nature-for-one .paras {
+    margin-top: 30px; } }
+
 [data-module-image-left-content-right-module].data-module-nature-for-one-bottom {
   display: none; }
   @media only screen and (min-width: 40.0625em) {
