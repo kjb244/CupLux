@@ -19,6 +19,17 @@
 
 	}
 
+	&.data-module-main-grand-opening-one-column-content{
+		margin: 0;
+		display: none;
+		h3{
+			background-color: $purple;
+			padding: 20px;
+			margin: 0;
+			color: white;
+		}
+	}
+
 	&.data-module-menu{
 
 		margin-top: 15px;

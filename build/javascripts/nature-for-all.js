@@ -49,6 +49,13 @@ $(document).ready(function(){  var main = function(){
 
 		});
 
+		var $grandOpening = $("[data-module-one-column-content-module].data-module-main-grand-opening-one-column-content");
+		console.log($grandOpening);
+		setTimeout(function(){
+			$grandOpening.slideDown("slow");
+
+		},2000);
+
 	}
 
 	return voidMain();

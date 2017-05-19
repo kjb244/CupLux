@@ -157,6 +157,15 @@ nav * {
       [data-module-one-column-content-module] h3.first {
         margin-top: 26px; } }
 
+[data-module-one-column-content-module].data-module-main-grand-opening-one-column-content {
+  margin: 0;
+  display: none; }
+  [data-module-one-column-content-module].data-module-main-grand-opening-one-column-content h3 {
+    background-color: #5B2B82;
+    padding: 20px;
+    margin: 0;
+    color: white; }
+
 [data-module-one-column-content-module].data-module-menu {
   margin-top: 15px; }
   @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
