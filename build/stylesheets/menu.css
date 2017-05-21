@@ -115,6 +115,10 @@ nav * {
   [data-module-image-left-content-right-module].data-module-menu h3 {
     color: #5B2B82; }
 
+@media only screen and (min-width: 40.0625em) {
+  [data-module-image-left-content-right-module].data-module-rewards-how-does-it-work {
+    margin-top: 30px; } }
+
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
   [data-module-image-left-content-right-module].data-module-nature-for-one .left {
     flex: 0 0 40%; } }
@@ -131,12 +135,12 @@ nav * {
       margin-top: -20px; } }
 
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-  [data-module-image-left-content-right-module].data-module-nature-for-one .paras {
-    margin-top: 25px; } }
+  [data-module-image-left-content-right-module].data-module-nature-for-one .right {
+    margin-top: 30px; } }
 
 @media only screen and (min-width: 64.0625em) {
-  [data-module-image-left-content-right-module].data-module-nature-for-one .paras {
-    margin-top: 30px; } }
+  [data-module-image-left-content-right-module].data-module-nature-for-one .right {
+    margin-top: 35px; } }
 
 [data-module-image-left-content-right-module].data-module-nature-for-one-bottom {
   display: none; }

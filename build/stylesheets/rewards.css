@@ -209,6 +209,55 @@ nav * {
 
 [data-module-one-column-content-module].data-module-rewards-faq {
   display: none; }
+ [data-module-image-left-content-right-module] .container {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 40.0625em) {
+    [data-module-image-left-content-right-module] .container {
+      flex-direction: row; }
+      [data-module-image-left-content-right-module] .container .left {
+        flex: 0 0 40%; } }
+
+[data-module-image-left-content-right-module].data-module-menu {
+  margin-top: 20px; }
+  [data-module-image-left-content-right-module].data-module-menu h3 {
+    color: #5B2B82; }
+
+@media only screen and (min-width: 40.0625em) {
+  [data-module-image-left-content-right-module].data-module-rewards-how-does-it-work {
+    margin-top: 30px; } }
+
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  [data-module-image-left-content-right-module].data-module-nature-for-one .left {
+    flex: 0 0 40%; } }
+
+@media only screen and (min-width: 64.0625em) {
+  [data-module-image-left-content-right-module].data-module-nature-for-one .left {
+    flex: 0 0 33%; } }
+
+[data-module-image-left-content-right-module].data-module-nature-for-one .left img {
+  margin-top: -28px;
+  margin-bottom: -40px; }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    [data-module-image-left-content-right-module].data-module-nature-for-one .left img {
+      margin-top: -20px; } }
+
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  [data-module-image-left-content-right-module].data-module-nature-for-one .right {
+    margin-top: 30px; } }
+
+@media only screen and (min-width: 64.0625em) {
+  [data-module-image-left-content-right-module].data-module-nature-for-one .right {
+    margin-top: 35px; } }
+
+[data-module-image-left-content-right-module].data-module-nature-for-one-bottom {
+  display: none; }
+  @media only screen and (min-width: 40.0625em) {
+    [data-module-image-left-content-right-module].data-module-nature-for-one-bottom .right {
+      margin-left: 44px; } }
+  @media only screen and (max-width: 40em) {
+    [data-module-image-left-content-right-module].data-module-nature-for-one-bottom .right {
+      margin-top: 20px; } }
  [data-module-footer-bottom-bar-module] footer.show-for-small-only {
   background-color: #f9f7f5;
   padding: 30px; }

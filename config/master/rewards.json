@@ -29,8 +29,8 @@
           "class": "data-module-rewards-bloc-description"
         },
         {
-          "name": "/master/one-column-image-module",
-          "copy": "rewards-how-does-it-work-one-column-image-module.json",
+          "name": "/master/image-left-content-right-module",
+          "copy": "rewards-image-left-content-right-module.json",
           "class": "data-module-rewards-how-does-it-work"
         },
         {
