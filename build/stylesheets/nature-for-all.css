@@ -120,6 +120,14 @@ nav * {
     margin-top: 30px; } }
 
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  [data-module-image-left-content-right-module].data-module-rewards-how-does-it-work .left {
+    flex: 0 0 50%; } }
+
+@media only screen and (min-width: 64.0625em) {
+  [data-module-image-left-content-right-module].data-module-rewards-how-does-it-work .left {
+    flex: 0 0 42%; } }
+
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
   [data-module-image-left-content-right-module].data-module-nature-for-one .left {
     flex: 0 0 40%; } }
 
