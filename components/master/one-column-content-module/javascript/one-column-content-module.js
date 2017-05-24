@@ -25,6 +25,11 @@ var main = function(){
 
 		},2000);
 
+		var $exclusionsRestrictionsLink = settings.$target.find('#exclusions-restrictions-link');
+		$exclusionsRestrictionsLink.on('click', function(){
+			$(this).closest('.row').find('.row').first().slideToggle();
+		})
+
 	}
 
 	return voidMain();

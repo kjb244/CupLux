@@ -106,6 +106,21 @@
 	&.data-module-rewards-faq{
 		display: none;
 
+		.exclusions-restrictions{
+			#exclusions-restrictions-link{
+				border-bottom: 1px solid $purple;
+				&:hover{
+					cursor: pointer;
+				}
+			}
+			.row{
+				display: none;
+
+			}
+
+		}
+
+
 	}
 
 	&.data-module-location-hours{

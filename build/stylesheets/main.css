@@ -165,6 +165,12 @@ nav * {
 
 [data-module-one-column-content-module].data-module-rewards-faq {
   display: none; }
+  [data-module-one-column-content-module].data-module-rewards-faq .exclusions-restrictions #exclusions-restrictions-link {
+    border-bottom: 1px solid #5B2B82; }
+    [data-module-one-column-content-module].data-module-rewards-faq .exclusions-restrictions #exclusions-restrictions-link:hover {
+      cursor: pointer; }
+  [data-module-one-column-content-module].data-module-rewards-faq .exclusions-restrictions .row {
+    display: none; }
  [data-module-image-interchange-module] {
   margin-top: 30px;
   font-size: 22px; }

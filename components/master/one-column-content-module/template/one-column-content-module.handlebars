@@ -1,6 +1,6 @@
 {{#if content}}
 	{{#each this.content}}
-		<div class="row collapse">
+		<div class="row collapse{{#if this.rowClass}} {{this.rowClass}}{{/if}}">
 			<div class="small-12 medium-12 medium-centered text-center columns">
 				{{#if this.header}}
 					<h3 class="{{#unless @index}}first{{/unless}}">{{{this.header}}}</h3>
