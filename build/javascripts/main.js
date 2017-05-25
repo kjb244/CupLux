@@ -6,6 +6,11 @@ $(document).ready(function(){  var main = function(){
 
 	var voidMain = function(){
 
+		var browser =  navigator.userAgent.toLowerCase();
+		if (browser.indexOf('chrom') > -1){
+			settings.$target.find('li').addClass('flexBottomBorderSpecific');
+		}
+
 
 	}
 

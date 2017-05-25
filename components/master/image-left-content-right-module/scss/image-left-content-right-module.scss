@@ -10,6 +10,9 @@
 
 			.left{
 				flex: 0 0 40%;
+				img{
+					width: 100%;
+				}
 
 			}
 		}
@@ -20,6 +23,7 @@
 		h3{
 			color: $purple;
 		}
+
 	}
 
 	&.data-module-rewards-how-does-it-work{
