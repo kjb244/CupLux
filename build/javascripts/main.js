@@ -7,7 +7,7 @@ $(document).ready(function(){  var main = function(){
 	var voidMain = function(){
 
 		var browser =  navigator.userAgent.toLowerCase();
-		if (browser.indexOf('chrom') > -1){
+		if (browser.indexOf('chrome') > -1 && navigaotr.appVersion.indexOf('Mac') == -1){
 			settings.$target.find('li').addClass('flexBottomBorderSpecific');
 		}
 
