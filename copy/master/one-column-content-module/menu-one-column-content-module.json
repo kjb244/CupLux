@@ -10,7 +10,7 @@
   ],
   "LINKS": {
     "pdfMenuLink": {
-      "href": "javascript:void(0)",
+      "href": "menu-pdf",
       "id": "pdf-menu-link",
       "content": "Click here for a PDF of our menu."
     }

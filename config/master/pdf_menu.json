@@ -1,0 +1,16 @@
+{
+  "url": "menu-pdf",
+  "title": "CupLux Coffee PDF Menu",
+  "modules": [
+    {
+      "type": "body",
+      "modules": [
+        {
+          "name": "/master/one-column-content-module",
+          "copy": "menu-pdf-one-column-content-module.json",
+          "class": "data-module-menu-pdf"
+        }
+      ]
+    }
+  ]
+}
