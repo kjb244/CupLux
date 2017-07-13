@@ -34,9 +34,6 @@ router.get('/location-hours', function(req, res){
 	res.sendFile(buildDirectory + 'location-hours.html');
 });
 
-router.get('/menu-pdf', function(req, res){
-	res.sendFile(buildDirectory + 'menu-pdf.html');
-});
 
 module.exports = router;
 

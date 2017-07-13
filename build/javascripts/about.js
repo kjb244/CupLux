@@ -60,20 +60,6 @@ $(document).ready(function(){  var main = function(){
 			$(this).closest('.row').find('.row').first().slideToggle();
 		});
 
-		var menuPDF = settings.$target.hasClass('data-module-menu-pdf');
-		if (menuPDF){
-			var encodedString = settings.$target.find('p').text();
-				var objbuilder = '';
-			    objbuilder += ('<object width="100%" height="100%"      data="data:application/pdf;base64,');
-			    objbuilder += (encodedString);
-			    objbuilder += ('" type="application/pdf" class="internal">');
-			    objbuilder += ('<embed src="data:application/pdf;base64,');
-			    objbuilder += (encodedString);
-			    objbuilder += ('" type="application/pdf" />');
-			    objbuilder += ('</object>');
-			    document.write(objbuilder);
-
-		}
 
 	}
 
