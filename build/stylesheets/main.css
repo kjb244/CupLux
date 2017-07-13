@@ -171,6 +171,9 @@ nav * {
       cursor: pointer; }
   [data-module-one-column-content-module].data-module-rewards-faq .exclusions-restrictions .row {
     display: none; }
+
+[data-module-one-column-content-module].data-module-menu-pdf {
+  display: none; }
  [data-module-image-interchange-module] {
   margin-top: 30px;
   font-size: 22px; }

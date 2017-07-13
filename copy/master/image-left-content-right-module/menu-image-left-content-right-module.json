@@ -25,7 +25,7 @@
   },
   "LINKS": {
     "pdfMenuLink": {
-      "href": "menu-pdf",
+      "href": "javascript:void(0);",
       "id": "pdf-menu-link",
       "content": "Click here for a PDF of our menu."
     }

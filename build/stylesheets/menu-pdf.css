@@ -68,3 +68,6 @@
       cursor: pointer; }
   [data-module-one-column-content-module].data-module-rewards-faq .exclusions-restrictions .row {
     display: none; }
+
+[data-module-one-column-content-module].data-module-menu-pdf {
+  display: none; }
