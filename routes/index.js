@@ -34,6 +34,10 @@ router.get('/location-hours', function(req, res){
 	res.sendFile(buildDirectory + 'location-hours.html');
 });
 
+router.get('/menu-pdf', function(req, res){
+	res.sendFile(path.join(__dirname, '../', 'assets/files/', 'CupLux-Menu.pdf'));
+});
+
 
 module.exports = router;
 
