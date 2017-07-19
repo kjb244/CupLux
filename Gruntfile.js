@@ -244,46 +244,52 @@ module.exports = function(grunt) {
 
 		//do production build
 		rmDir(prodBuildPath);
-		//copy local build into prod
-		fsExtra.copySync(buildPath, prodBuildPath);
 
-		//loop through files in prodBuildPath
-		let htmlFilePath = fs.readdirSync(prodBuildPath);
-		for (let j in htmlFilePath){
-			let filePath = path.join(prodBuildPath,htmlFilePath[j]);
-			//fix html issues
-			if (! isDir(filePath)){
-				let content = fs.readFileSync(filePath).toString();
-				//change images
-				content = content.replace(/src='\/images/g, "src='\.\/images")
-				//change links
-								 .replace(/(<a href=')(\/)([A-z-]+)/g,"$1.$2$3.html");
-				
 
-				//delete file
-				fs.unlinkSync(filePath);
-				//rewrite
-				fs.writeFileSync(filePath, content);
-			}
-			
-		}
+		if(grunt.option('githubBuild') && grunt.option('githubBuild') == true) {
 
-		//now loop through css files and fix background image issues
-		let cssFilePath = fs.readdirSync(path.join(prodBuildPath,'stylesheets'));
-		for(let j in cssFilePath){
-			let filePath = path.join(prodBuildPath, 'stylesheets', cssFilePath[j]);
-			if (! isDir(filePath)){
-				if (filePath.includes('foundation')){
-					continue;
+
+			//copy local build into prod
+			fsExtra.copySync(buildPath, prodBuildPath);
+
+			//loop through files in prodBuildPath
+			let htmlFilePath = fs.readdirSync(prodBuildPath);
+			for (let j in htmlFilePath){
+				let filePath = path.join(prodBuildPath,htmlFilePath[j]);
+				//fix html issues
+				if (! isDir(filePath)){
+					let content = fs.readFileSync(filePath).toString();
+					//change images
+					content = content.replace(/src='\/images/g, "src='\.\/images")
+					//change links
+									 .replace(/(<a href=')(\/)([A-z-]+)/g,"$1.$2$3.html");
+					
+
+					//delete file
+					fs.unlinkSync(filePath);
+					//rewrite
+					fs.writeFileSync(filePath, content);
 				}
-				let content = fs.readFileSync(filePath).toString();
+				
+			}
 
-				content = content.replace(/(background-image:)(\s+)(url\("|')(\/images)/g,"$1$2$3../images")
-								 .replace(/(background:)(\s+)(url\("|')(\/images)/g,"$1$2$3../images");
-				//delete file
-				fs.unlinkSync(filePath);
-				//rewrite
-				fs.writeFileSync(filePath, content);
+			//now loop through css files and fix background image issues
+			let cssFilePath = fs.readdirSync(path.join(prodBuildPath,'stylesheets'));
+			for(let j in cssFilePath){
+				let filePath = path.join(prodBuildPath, 'stylesheets', cssFilePath[j]);
+				if (! isDir(filePath)){
+					if (filePath.includes('foundation')){
+						continue;
+					}
+					let content = fs.readFileSync(filePath).toString();
+
+					content = content.replace(/(background-image:)(\s+)(url\("|')(\/images)/g,"$1$2$3../images")
+									 .replace(/(background:)(\s+)(url\("|')(\/images)/g,"$1$2$3../images");
+					//delete file
+					fs.unlinkSync(filePath);
+					//rewrite
+					fs.writeFileSync(filePath, content);
+				}
 			}
 		}
 
