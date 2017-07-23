@@ -15,7 +15,6 @@ var main = function(){
 					$('html, body').animate({scrollTop: pixelsDown - offset}, 1000);
 
 				}
-
 		});
 
 		var $grandOpening = $("[data-module-one-column-content-module].data-module-main-grand-opening-one-column-content");
