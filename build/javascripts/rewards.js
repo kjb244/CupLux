@@ -6,7 +6,6 @@ $(document).ready(function(){  var main = function(){
 
 	var voidMain = function(){
 
-
 	}
 
 	return voidMain();
@@ -45,11 +44,9 @@ $(document).ready(function(){  var main = function(){
 					$('html, body').animate({scrollTop: pixelsDown - offset}, 1000);
 
 				}
-
 		});
 
 		var $grandOpening = $("[data-module-one-column-content-module].data-module-main-grand-opening-one-column-content");
-		console.log($grandOpening);
 		setTimeout(function(){
 			$grandOpening.slideDown("slow");
 

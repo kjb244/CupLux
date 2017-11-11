@@ -6,7 +6,6 @@ var main = function(){
 
 	var voidMain = function(){
 
-
 	}
 
 	return voidMain();
